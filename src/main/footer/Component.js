@@ -1,6 +1,5 @@
 import React from "react";
-const pdf =
-    "https://s3.amazonaws.com/aws-website-resumelink-8r99h/Jamie+Woodmancy+Resume+2017.pdf";
+const pdf = "jamie-woodmancy-resume-2017.pdf";
 
 function FooterComponent(props) {
     const containerStyles = {
