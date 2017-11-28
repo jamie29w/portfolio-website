@@ -27,6 +27,8 @@ body.modal-open {
     overflow: visible;
 }
 
+/*Responsive styling below*/
+
 .a {
     flex-wrap: wrap;
     order: 1;
@@ -67,7 +69,23 @@ body.modal-open {
     margin-bottom: 8px;
 }
 
-@media screen and (max-width: 830px) {
+.containerStyles {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex: 0 1 auto;
+}
+
+.container2Styles {
+}
+
+.imageStyles {
+    max-height: 450px;
+    width: auto;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 768px) {
     .a {
         order: 1;
         flex: 0 0 50%;
@@ -91,5 +109,17 @@ body.modal-open {
     .e {
         order: 2;
         flex: 0 0 50%;
+    }
+
+    .imageStyles {
+        max-width: 480px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .imageStyles {
+        max-width: 375px;
+        height: auto;
     }
 }
