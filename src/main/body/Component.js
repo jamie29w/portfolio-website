@@ -7,28 +7,28 @@ import { Route, Switch } from "react-router-dom";
 
 function BodyComponent(props) {
     const divStyles = {
-        backgroundColor: "#F6F4F5",
-        color: "#2C2C2A",
-        width: "100%",
-        textAlign: "center"
+        // backgroundColor: "#F6F4F5",
+        // color: "#2C2C2A",
+        alignContent: "center",
+        width: "80%",
+        marginLeft: "10%",
+        marginRight: "10%",
+        textAlign: "center",
+        flex: "1",
+        flexDirection: "row"
     };
 
     return (
         <div style={divStyles}>
-            <Grid>
-                <Row>
-                    <Switch>
-                        <Route exact path="/" component={HomeComponent} />
-                        <Route
-                            path="/Portfolio"
-                            component={PortfolioComponent}
-                        />
-                    </Switch>
-                </Row>
-                <Row>
-                    <SkillsComponent />
-                </Row>
-            </Grid>
+            <div>
+                <Switch>
+                    <Route exact path="/" component={HomeComponent} />
+                    <Route path="/Portfolio" component={PortfolioComponent} />
+                </Switch>
+            </div>
+            <div>
+                <SkillsComponent />
+            </div>
         </div>
     );
 }
