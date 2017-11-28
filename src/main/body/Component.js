@@ -1,7 +1,9 @@
 import React from "react";
 import { Grid, Row } from "react-bootstrap";
 import HomeComponent from "./home/Component";
+import PortfolioComponent from "./portfolio/Component";
 import SkillsComponent from "./skills/Component";
+import { Route, Switch } from "react-router-dom";
 
 function BodyComponent(props) {
     const divStyles = {
@@ -15,7 +17,13 @@ function BodyComponent(props) {
         <div style={divStyles}>
             <Grid>
                 <Row>
-                    <HomeComponent />
+                    <Switch>
+                        <Route exact path="/" component={HomeComponent} />
+                        <Route
+                            path="/Portfolio"
+                            component={PortfolioComponent}
+                        />
+                    </Switch>
                 </Row>
                 <Row>
                     <SkillsComponent />
