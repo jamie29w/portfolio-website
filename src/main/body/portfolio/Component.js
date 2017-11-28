@@ -1,45 +1,55 @@
 import React from "react";
-import { Col } from "react-bootstrap";
+import snapCrmUrl from "../../../assets/snap-crm-main.png";
+import nativeWeatherUrl from "../../../assets/native-weather-today.png";
 
 export default function PortfolioComponent() {
     const colStyles = {
-        backgroundColor: "rgba(42, 46, 55, .7)",
-        color: "#DCDCDC",
+        backgroundColor: "#f6f4f5",
         marginTop: "20px",
         marginBottom: "25px",
         borderRadius: "10px",
-        padding: "20px"
+        padding: "20px",
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-around",
+        flexWrap: "wrap",
+        alignItems: "center"
     };
 
     const headTextStyles = {
-        fontFamily: "'Lato', sans-serif",
-        fontWeight: "100",
-        fontStyle: "italic",
+        color: "rgba(42, 46, 55. .7)",
         fontSize: ".9em",
-        marginTop: "25px",
-        marginLeft: "25px",
-        textAlign: "justify"
-    };
-
-    const bodyTextStyles = {
         fontFamily: "'Lato', sans-serif",
-        fontSize: ".55em",
-        fontWeight: "300",
-        marginBottom: "20px",
-        textAlign: "justify",
-        lineHeight: "125%",
-        marginLeft: "25px",
-        marginRight: "25px",
-        letterSpacing: "0px"
+        fontWeight: "300"
     };
 
     return (
-        <div style={colStyles}>
-            <h3 style={headTextStyles}>This section is in production.</h3>
-
-            <h3 style={bodyTextStyles}>
-                Please enjoy the rest of my website in the meanwhile.
-            </h3>
+        <div>
+            <h3 style={headTextStyles}>My work:</h3>
+            <div style={colStyles}>
+                <div>
+                    <a
+                        target="_blank"
+                        href="https://github.com/jamie29w/snap-crm">
+                        <img
+                            src={snapCrmUrl}
+                            className="imageStyles"
+                            alt="Screenshot of Snap CRM, built with React, NodeJS, and MongoDB. Click here to see the repo on Github."
+                        />
+                    </a>
+                </div>
+                <div className="containerStyles">
+                    <a
+                        target="_blank"
+                        href="https://github.com/vschool-september-2017/native-weather">
+                        <img
+                            src={nativeWeatherUrl}
+                            className="imageStyles"
+                            alt="Screenshot of Native-Weather app, built with React Native. Click here to see the repo on Github."
+                        />
+                    </a>
+                </div>
+            </div>
         </div>
     );
 }
