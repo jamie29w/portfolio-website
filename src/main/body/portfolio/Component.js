@@ -20,8 +20,7 @@ export default function PortfolioComponent() {
         color: "rgba(42, 46, 55. .7)",
         fontSize: ".9em",
         fontFamily: "'Lato', sans-serif",
-        fontWeight: "300",
-        fontStyle: "italic"
+        fontWeight: "300"
     };
 
     return (
@@ -29,14 +28,26 @@ export default function PortfolioComponent() {
             <h3 style={headTextStyles}>My work:</h3>
             <div style={colStyles}>
                 <div>
-                    <img src={snapCrmUrl} className="imageStyles" alt="" />
+                    <a
+                        target="_blank"
+                        href="https://github.com/jamie29w/snap-crm">
+                        <img
+                            src={snapCrmUrl}
+                            className="imageStyles"
+                            alt="Screenshot of Snap CRM, built with React, NodeJS, and MongoDB. Click here to see the repo on Github."
+                        />
+                    </a>
                 </div>
                 <div className="containerStyles">
-                    <img
-                        src={nativeWeatherUrl}
-                        className="imageStyles"
-                        alt=""
-                    />
+                    <a
+                        target="_blank"
+                        href="https://github.com/vschool-september-2017/native-weather">
+                        <img
+                            src={nativeWeatherUrl}
+                            className="imageStyles"
+                            alt="Screenshot of Native-Weather app, built with React Native. Click here to see the repo on Github."
+                        />
+                    </a>
                 </div>
             </div>
         </div>

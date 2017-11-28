@@ -75,9 +75,9 @@ class SkillsComponent extends React.Component {
             color: "rgba(42, 46, 55. .7)",
             fontSize: ".9em",
             fontFamily: "'Lato', sans-serif",
-            fontWeight: "300",
-            fontStyle: "italic"
+            fontWeight: "300"
         };
+
         return (
             <div>
                 <div>

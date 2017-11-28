@@ -7,8 +7,6 @@ import { Route, Switch } from "react-router-dom";
 
 function BodyComponent(props) {
     const divStyles = {
-        // backgroundColor: "#F6F4F5",
-        // color: "#2C2C2A",
         alignContent: "center",
         width: "80%",
         marginLeft: "10%",
