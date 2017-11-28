@@ -1,7 +1,7 @@
 import React from "react";
 import { Modal, OverlayTrigger, Button } from "react-bootstrap";
 import scrollToElement from "scroll-to-element";
-// import { scrollToComponent } from "react-scroll-to-component";
+import { Link } from "react-router-dom";
 
 function Navbar(props) {
     const flexContainerStyles = {
@@ -20,12 +20,12 @@ function Navbar(props) {
 
     return (
         <div style={flexContainerStyles}>
-            <a className="links" onClick={props.openModal}>
+            <Link to="/" className="links">
                 Home
-            </a>
-            <a className="links" onClick={props.openModal}>
+            </Link>
+            <Link to="/portfolio" className="links">
                 Portfolio
-            </a>
+            </Link>
             <a className="links" onClick={props.openModal}>
                 About Me
             </a>

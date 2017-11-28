@@ -7,7 +7,8 @@ function HomeComponent(props) {
         color: "#DCDCDC",
         marginTop: "20px",
         marginBottom: "25px",
-        borderRadius: "10px"
+        borderRadius: "10px",
+        padding: "20px"
     };
 
     const headTextStyles = {
@@ -50,7 +51,7 @@ function HomeComponent(props) {
     };
 
     return (
-        <Col style={colStyles} xs={10} xsOffset={1} sm={12} smOffset={0}>
+        <div style={colStyles}>
             <h3 style={headTextStyles}>Hello world,</h3>
 
             <h3 style={bodyTextStyles}>
@@ -76,7 +77,7 @@ function HomeComponent(props) {
             </h3>
             <h3 style={bodyTextStyles}>Cheers!</h3>
             <h3 style={bodyTextStyles}>-Jamie W</h3>
-        </Col>
+        </div>
     );
 }
 
