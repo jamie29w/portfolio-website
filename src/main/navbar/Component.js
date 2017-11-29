@@ -9,7 +9,7 @@ function Navbar(props) {
         position: "fixed",
         backgroundColor: "rgba(39, 58, 100, .9)",
         height: "5vh",
-        minHeight: "30px",
+        minHeight: "35px",
         fontFamily: "'Lato', sans-serif",
         display: "flex",
         showNavection: "row",
@@ -25,7 +25,7 @@ function Navbar(props) {
 
     return (
         <div>
-            <Menu isOpen={false}>
+            <Menu isOpen={false} width={175}>
                 <span className="iconLinks">
                     <a
                         target="_blank"
