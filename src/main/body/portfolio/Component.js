@@ -30,6 +30,7 @@ export default function PortfolioComponent() {
                 <div>
                     <a
                         target="_blank"
+                        rel="noopener noreferrer"
                         href="https://github.com/jamie29w/snap-crm">
                         <img
                             src={snapCrmUrl}
@@ -41,6 +42,7 @@ export default function PortfolioComponent() {
                 <div className="containerStyles">
                     <a
                         target="_blank"
+                        rel="noopener noreferrer"
                         href="https://github.com/vschool-september-2017/native-weather">
                         <img
                             src={nativeWeatherUrl}

@@ -10,7 +10,7 @@ function HeaderComponent(props) {
         OBackgroundSize: "cover",
         width: "100%",
         minWidth: "375px",
-        height: "85vh",
+        height: "75vh",
         postion: "relative",
         fontFamily: "'Lato', sans-serif",
         color: "#DCDCDC",
