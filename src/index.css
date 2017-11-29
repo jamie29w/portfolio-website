@@ -142,7 +142,7 @@ body.modal-open {
 
     .bm-burger-button {
         display: inherit;
-        position: fixed;
+        position: absolute;
         width: 36px;
         height: 30px;
         left: 36px;
@@ -153,7 +153,7 @@ body.modal-open {
 /*Non-responsive Burger Menu Styling Below*/
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-    background: #373a47;
+    background: rgba(55, 58, 71, 0.8);
 }
 
 /* Position and sizing of clickable cross button */

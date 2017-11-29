@@ -11,6 +11,7 @@ function Navbar(props) {
         position: "fixed",
         backgroundColor: "rgba(39, 58, 100, .9)",
         height: "5vh",
+        minHeight: "30px",
         fontFamily: "'Lato', sans-serif",
         display: "flex",
         showNavection: "row",
