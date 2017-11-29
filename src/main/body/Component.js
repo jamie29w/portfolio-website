@@ -2,6 +2,8 @@ import React from "react";
 import HomeComponent from "./home/Component";
 import PortfolioComponent from "./portfolio/Component";
 import SkillsComponent from "./skills/Component";
+import SnapCRMComponent from "./snap-crm/Component";
+import NativeWeatherComponent from "./native-weather/Component";
 import { Route, Switch } from "react-router-dom";
 
 function BodyComponent(props) {
@@ -25,11 +27,16 @@ function BodyComponent(props) {
                             path="/Portfolio"
                             component={PortfolioComponent}
                         />
+                        <Route path="/snap-crm" component={SnapCRMComponent} />
+                        <Route
+                            path="/nativeweather"
+                            component={NativeWeatherComponent}
+                        />
                     </Switch>
                 </div>
-                <div>
+                {/* <div>
                     <SkillsComponent />
-                </div>
+                </div> */}
             </div>
         </h2>
     );
