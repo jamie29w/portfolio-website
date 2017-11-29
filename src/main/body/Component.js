@@ -1,7 +1,6 @@
 import React from "react";
 import HomeComponent from "./home/Component";
 import PortfolioComponent from "./portfolio/Component";
-import SkillsComponent from "./skills/Component";
 import SnapCRMComponent from "./snap-crm/Component";
 import NativeWeatherComponent from "./native-weather/Component";
 import { Route, Switch } from "react-router-dom";
@@ -34,9 +33,6 @@ function BodyComponent(props) {
                         />
                     </Switch>
                 </div>
-                {/* <div>
-                    <SkillsComponent />
-                </div> */}
             </div>
         </h2>
     );

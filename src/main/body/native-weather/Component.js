@@ -1,50 +1,76 @@
 import React from "react";
+import nativeWeatherToday from "../../../assets/native-weather-today.png";
+import nativeWeatherForecast from "../../../assets/native-weather-forecast.png";
+import nativeWeatherLogin from "../../../assets/native-weather-login.png";
 
 export default function NativeWeatherComponent() {
     const nativeWeatherViewStyles = {
         alignContent: "center",
-        width: "80%",
-        marginLeft: "10%",
-        marginRight: "10%",
+        width: "100%",
         textAlign: "center",
         flex: "1",
-        flexDirection: "row"
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-around",
+        flexWrap: "wrap",
+        alignItems: "justify"
     };
 
     const headTextStyles = {
         fontFamily: "'Lato', sans-serif",
-        fontWeight: "100",
-        fontStyle: "italic",
-        fontSize: ".9em",
-        marginTop: "25px",
-        marginLeft: "25px",
-        textAlign: "justify"
-    };
-
-    const bodyTextStyles = {
-        fontFamily: "'Lato', sans-serif",
-        fontSize: ".55em",
         fontWeight: "300",
-        marginBottom: "20px",
-        textAlign: "justify",
-        lineHeight: "125%",
-        marginLeft: "25px",
-        marginRight: "25px",
-        letterSpacing: "0px"
+        fontSize: ".7em",
+        margin: "15px 15px",
+        textAlign: "left",
+        minWidth: "175px",
+        flexWrap: "no-wrap"
     };
 
     return (
         <div style={nativeWeatherViewStyles}>
-            <h2 style={headTextStyles}>
-                Native Weather is my first venture into mobile coding...
-            </h2>
+            <div className="nativeWeatherRowStyles">
+                <img className="imageStyles" src={nativeWeatherToday} alt="" />
+                <h2 style={headTextStyles}>
+                    Native Weather was my first foray into mobile programming,
+                    pair programming, and multi-user version control.
+                </h2>
+            </div>
 
-            <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/vschool-september-2017/native-weather">
-                Link
-            </a>
+            <div className="nativeWeatherRowStyles">
+                <img
+                    className="imageStyles"
+                    src={nativeWeatherForecast}
+                    alt=""
+                />
+                <h2 style={headTextStyles}>
+                    We queried the{" "}
+                    <a className="blueLinks" href="https://darksky.net">
+                        Dark Sky API
+                    </a>{" "}
+                    to provide current, daily, and weekly weather data based on
+                    the geolocation of the device.
+                </h2>
+            </div>
+            <div className="nativeWeatherRowStyles">
+                <img className="imageStyles" src={nativeWeatherLogin} alt="" />
+                <h2 style={headTextStyles}>
+                    And just becuase we could, we incorporated user
+                    authentication. Your weather is your business and yours
+                    alone.
+                </h2>
+            </div>
+
+            <h2 style={headTextStyles}>
+                See the{" "}
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/vschool-september-2017/native-weather"
+                    className="blueLinks">
+                    Github repo
+                </a>
+                .
+            </h2>
         </div>
     );
 }

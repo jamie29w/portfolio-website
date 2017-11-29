@@ -22,7 +22,6 @@ export default function SnapCRMComponent() {
         fontSize: ".7em",
         margin: "15px 15px",
         textAlign: "justify"
-        // display: "block"
     };
 
     return (

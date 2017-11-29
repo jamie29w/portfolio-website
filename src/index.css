@@ -45,7 +45,7 @@ body {
     text-decoration: none;
 }
 
-/*Responsive styling below*/
+/*Responsive (and related) styling below*/
 
 .a {
     flex-wrap: wrap;
@@ -114,6 +114,13 @@ body {
     display: none;
 }
 
+.nativeWeatherRowStyles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
 @media screen and (max-width: 768px) {
     .a {
         order: 1;
@@ -165,6 +172,10 @@ body {
         height: 30px;
         left: 36px;
         top: 36px;
+    }
+
+    .nativeWeatherRowStyles {
+        flex-wrap: wrap;
     }
 }
 
