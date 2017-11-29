@@ -6,35 +6,29 @@ class NavbarContainer extends React.Component {
     constructor() {
         super();
         this.state = {
-            showModal: false
+            showNav: true
         };
 
-        this.closeModal = this.closeModal.bind(this);
-        this.openModal = this.openModal.bind(this);
-        this.handleScroll = this.handleScroll.bind(this);
+        this.handleResize = this.handleResize.bind(this);
     }
 
-    closeModal() {
-        this.setState({ showModal: false });
+    handleResize() {
+        let showNav = window.innerWidth < 480 ? true : false;
+        this.setState(prevState => {
+            return {
+                ...prevState,
+                showNav
+            };
+        });
     }
 
-    openModal() {
-        this.setState({ showModal: true });
-    }
-
-    handleScroll(id, offNum) {
-        // scrollToElement(id, { offset: offNum });
+    componentDidMount() {
+        this.handleResize();
+        window.addEventListener("resize", this.handleResize);
     }
 
     render() {
-        return (
-            <NavbarComponent
-                closeModal={this.closeModal}
-                openModal={this.openModal}
-                modalShow={this.state.showModal}
-                handleScroll={this.handleScroll}
-            />
-        );
+        return <NavbarComponent showNav={this.state.showNav} />;
     }
 }
 

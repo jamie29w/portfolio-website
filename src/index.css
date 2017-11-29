@@ -13,6 +13,14 @@ body {
     text-decoration: none;
 }
 
+.iconLinks {
+    color: rgba(246, 244, 245, 0.65);
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 20px;
+}
+
 .links:hover {
     color: rgba(246, 244, 245, 1);
     text-decoration: none;
@@ -76,9 +84,6 @@ body.modal-open {
     flex: 0 1 auto;
 }
 
-.container2Styles {
-}
-
 .imageStyles {
     max-height: 450px;
     width: auto;
@@ -87,6 +92,10 @@ body.modal-open {
 
 .imageStyles:hover {
     opacity: 0.75;
+}
+
+.bm-burger-button {
+    display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -119,6 +128,10 @@ body.modal-open {
         max-width: 480px;
         height: auto;
     }
+
+    .bm-burger-button {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -126,4 +139,54 @@ body.modal-open {
         max-width: 375px;
         height: auto;
     }
+
+    .bm-burger-button {
+        display: inherit;
+        position: fixed;
+        width: 36px;
+        height: 30px;
+        left: 36px;
+        top: 36px;
+    }
+}
+
+/*Non-responsive Burger Menu Styling Below*/
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+    background: #373a47;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+    background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+    background: #373a47;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.5em;
+    color: rgba(246, 244, 245, 1);
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+    fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+    color: rgba(246, 244, 245, 1);
+    padding: 0.8em;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
 }

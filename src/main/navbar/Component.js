@@ -2,6 +2,8 @@ import React from "react";
 import { Modal, OverlayTrigger, Button } from "react-bootstrap";
 import scrollToElement from "scroll-to-element";
 import { Link } from "react-router-dom";
+import { stack as Menu } from "react-burger-menu";
+const pdf = "jamie-woodmancy-resume-2017.pdf";
 
 function Navbar(props) {
     const flexContainerStyles = {
@@ -11,47 +13,99 @@ function Navbar(props) {
         height: "5vh",
         fontFamily: "'Lato', sans-serif",
         display: "flex",
-        flexDirection: "row",
+        showNavection: "row",
         flexWrap: "nowrap",
         alignItems: "center",
         justifyContent: "space-around",
         zIndex: "100"
     };
 
-    return (
-        <div style={flexContainerStyles}>
-            <Link to="/" className="links">
-                Home
-            </Link>
-            <Link to="/portfolio" className="links">
-                Portfolio
-            </Link>
-            <a className="links" onClick={props.openModal}>
-                About Me
-            </a>
-            <a
-                className="links"
-                id="contactLink"
-                onClick={() => {
-                    scrollToElement("#contactLink", {
-                        ease: "inOutBack",
-                        offset: 1500,
-                        duration: 2000
-                    });
-                }}>
-                Contact
-            </a>
+    const showMenu = {
+        display: "inherit"
+    };
 
-            <Modal show={props.modalShow} onHide={props.closeModal}>
-                <Modal.Header closeButton>
-                    <Modal.Title>This section is in production</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                    <p style={{ fontWeight: "300" }}>
-                        Please enjoy the rest of my website in the meanwhile.
-                    </p>
-                </Modal.Body>
-            </Modal>
+    const hideMenu = {
+        display: "none"
+    };
+
+    console.log("showNav is");
+
+    console.log(props.showNav);
+
+    return (
+        <div>
+            <Menu isOpen={false}>
+                <span className="iconLinks">
+                    <a
+                        target="_blank"
+                        className="iconLinks"
+                        href="https://github.com/jamie29w">
+                        <i className="fa fa-github fa-lg" aria-hidden="true" />
+                    </a>
+                </span>
+
+                <Link to="/" className="links">
+                    Home
+                </Link>
+
+                <Link to="/portfolio" className="links">
+                    Portfolio
+                </Link>
+
+                <span className="links">
+                    <a target="_blank" className="links" href={pdf}>
+                        Resume
+                    </a>
+                </span>
+
+                <span className="iconLinks">
+                    <a
+                        target="_blank"
+                        className="iconLinks"
+                        href="https://www.linkedin.com/in/jamiewoodmancy/">
+                        <i
+                            className="fa fa-linkedin-square fa-lg"
+                            aria-hidden="true"
+                        />
+                    </a>
+                </span>
+            </Menu>
+            <div style={props.showNav ? hideMenu : flexContainerStyles}>
+                <span className="iconLinks">
+                    <a
+                        target="_blank"
+                        className="iconLinks"
+                        href="https://github.com/jamie29w">
+                        <i className="fa fa-github fa-lg" aria-hidden="true" />
+                    </a>
+                </span>
+
+                <Link to="/" className="links">
+                    Home
+                </Link>
+
+                <Link to="/portfolio" className="links">
+                    Portfolio
+                </Link>
+
+                <span className="links">
+                    <a target="_blank" className="links" href={pdf}>
+                        Resume
+                    </a>
+                </span>
+
+                <span className="iconLinks">
+                    <a
+                        target="_blank"
+                        className="iconLinks"
+                        href="https://www.linkedin.com/in/jamiewoodmancy/">
+                        <i
+                            className="fa fa-linkedin-square fa-lg"
+                            aria-hidden="true"
+                        />
+                    </a>
+                </span>
+            </div>
         </div>
     );
 }
