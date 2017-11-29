@@ -1,6 +1,6 @@
 import React from "react";
 import HeaderComponent from "./header/Component";
-import BodyContainer from "./body/Container";
+import BodyComponent from "./body/Component";
 // import SkillsComponent from "./skills/Component";
 import FooterComponent from "./footer/Component";
 import NavbarContainer from "./navbar/Container";
@@ -18,7 +18,7 @@ class App extends React.Component {
             <div>
                 <NavbarContainer />
                 <HeaderComponent />
-                <BodyContainer />
+                <BodyComponent />
                 <FooterComponent />
             </div>
         );

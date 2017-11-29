@@ -22,6 +22,7 @@ function FooterComponent(props) {
             <span className="a">
                 <a
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="links"
                     href="https://github.com/jamie29w">
                     <i className="fa fa-github fa-lg" aria-hidden="true" />
@@ -36,7 +37,11 @@ function FooterComponent(props) {
                 </a>
             </span>
             <span className="c">
-                <a target="_blank" className="links" href={pdf}>
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="links"
+                    href={pdf}>
                     View My Resume
                 </a>
             </span>
@@ -48,6 +53,7 @@ function FooterComponent(props) {
             <span className="e">
                 <a
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="links"
                     href="https://www.linkedin.com/in/jamiewoodmancy/">
                     <i

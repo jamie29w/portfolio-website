@@ -1,6 +1,4 @@
 import React from "react";
-import { Modal, OverlayTrigger, Button } from "react-bootstrap";
-import scrollToElement from "scroll-to-element";
 import { Link } from "react-router-dom";
 import { stack as Menu } from "react-burger-menu";
 const pdf = "jamie-woodmancy-resume-2017.pdf";
@@ -21,17 +19,9 @@ function Navbar(props) {
         zIndex: "100"
     };
 
-    const showMenu = {
-        display: "inherit"
-    };
-
     const hideMenu = {
         display: "none"
     };
-
-    console.log("showNav is");
-
-    console.log(props.showNav);
 
     return (
         <div>
@@ -39,6 +29,7 @@ function Navbar(props) {
                 <span className="iconLinks">
                     <a
                         target="_blank"
+                        rel="noopener noreferrer"
                         className="iconLinks"
                         href="https://github.com/jamie29w">
                         <i className="fa fa-github fa-lg" aria-hidden="true" />
@@ -54,7 +45,11 @@ function Navbar(props) {
                 </Link>
 
                 <span className="links">
-                    <a target="_blank" className="links" href={pdf}>
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="links"
+                        href={pdf}>
                         Resume
                     </a>
                 </span>
@@ -62,6 +57,7 @@ function Navbar(props) {
                 <span className="iconLinks">
                     <a
                         target="_blank"
+                        rel="noopener noreferrer"
                         className="iconLinks"
                         href="https://www.linkedin.com/in/jamiewoodmancy/">
                         <i
@@ -75,6 +71,7 @@ function Navbar(props) {
                 <span className="iconLinks">
                     <a
                         target="_blank"
+                        rel="noopener noreferrer"
                         className="iconLinks"
                         href="https://github.com/jamie29w">
                         <i className="fa fa-github fa-lg" aria-hidden="true" />
@@ -90,7 +87,11 @@ function Navbar(props) {
                 </Link>
 
                 <span className="links">
-                    <a target="_blank" className="links" href={pdf}>
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="links"
+                        href={pdf}>
                         Resume
                     </a>
                 </span>
@@ -98,6 +99,7 @@ function Navbar(props) {
                 <span className="iconLinks">
                     <a
                         target="_blank"
+                        rel="noopener noreferrer"
                         className="iconLinks"
                         href="https://www.linkedin.com/in/jamiewoodmancy/">
                         <i

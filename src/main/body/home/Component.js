@@ -1,5 +1,4 @@
 import React from "react";
-import { Col } from "react-bootstrap";
 
 function HomeComponent(props) {
     const colStyles = {

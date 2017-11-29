@@ -1,6 +1,5 @@
 import React from "react";
 import NavbarComponent from "./Component";
-import scrollToElement from "scroll-to-element";
 
 class NavbarContainer extends React.Component {
     constructor() {

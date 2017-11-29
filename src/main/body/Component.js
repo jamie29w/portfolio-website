@@ -1,5 +1,4 @@
 import React from "react";
-import { Grid, Row } from "react-bootstrap";
 import HomeComponent from "./home/Component";
 import PortfolioComponent from "./portfolio/Component";
 import SkillsComponent from "./skills/Component";
@@ -17,17 +16,22 @@ function BodyComponent(props) {
     };
 
     return (
-        <div style={divStyles}>
-            <div>
-                <Switch>
-                    <Route exact path="/" component={HomeComponent} />
-                    <Route path="/Portfolio" component={PortfolioComponent} />
-                </Switch>
+        <h2>
+            <div style={divStyles}>
+                <div>
+                    <Switch>
+                        <Route exact path="/" component={HomeComponent} />
+                        <Route
+                            path="/Portfolio"
+                            component={PortfolioComponent}
+                        />
+                    </Switch>
+                </div>
+                <div>
+                    <SkillsComponent />
+                </div>
             </div>
-            <div>
-                <SkillsComponent />
-            </div>
-        </div>
+        </h2>
     );
 }
 
