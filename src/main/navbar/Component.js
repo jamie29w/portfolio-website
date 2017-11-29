@@ -8,7 +8,7 @@ function Navbar(props) {
         width: "100%",
         position: "fixed",
         backgroundColor: "rgba(39, 58, 100, .9)",
-        height: "5vh",
+        height: "6vh",
         minHeight: "35px",
         fontFamily: "'Lato', sans-serif",
         display: "flex",

@@ -31,11 +31,21 @@ body {
     text-decoration: none;
 }
 
-body.modal-open {
-    overflow: visible;
+.blueLinks {
+    color: rgba(39, 58, 100, 0.7);
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 5px 0px;
 }
 
-/*Responsive styling below*/
+.blueLinks:hover,
+.blueLinks:focus {
+    color: rgba(39, 58, 100, 1);
+    text-decoration: none;
+}
+
+/*Responsive (and related) styling below*/
 
 .a {
     flex-wrap: wrap;
@@ -88,14 +98,27 @@ body.modal-open {
     max-height: 450px;
     width: auto;
     border-radius: 2px;
+    margin: 15px;
+}
+.imageLinkStyles {
+    max-height: 450px;
+    width: auto;
+    border-radius: 2px;
 }
 
-.imageStyles:hover {
+.imageLinkStyles:hover {
     opacity: 0.75;
 }
 
 .bm-burger-button {
     display: none;
+}
+
+.nativeWeatherRowStyles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 @media screen and (max-width: 768px) {
@@ -124,7 +147,8 @@ body.modal-open {
         flex: 0 0 50%;
     }
 
-    .imageStyles {
+    .imageStyles,
+    .imageLinkStyles {
         max-width: 480px;
         height: auto;
     }
@@ -135,7 +159,8 @@ body.modal-open {
 }
 
 @media screen and (max-width: 480px) {
-    .imageStyles {
+    .imageStyles,
+    .imageLinkStyles {
         max-width: 375px;
         height: auto;
     }
@@ -147,6 +172,10 @@ body.modal-open {
         height: 30px;
         left: 36px;
         top: 36px;
+    }
+
+    .nativeWeatherRowStyles {
+        flex-wrap: wrap;
     }
 }
 

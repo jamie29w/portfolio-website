@@ -1,9 +1,12 @@
 import React from "react";
 import snapCrmUrl from "../../../assets/snap-crm-main.png";
 import nativeWeatherUrl from "../../../assets/native-weather-today.png";
+import SnapCRMComponent from "../snap-crm/Component";
+import NativeWeatherComponent from "../native-weather/Component";
+import { Link } from "react-router-dom";
 
 export default function PortfolioComponent() {
-    const colStyles = {
+    const portfolioViewStyles = {
         backgroundColor: "#f6f4f5",
         marginTop: "20px",
         marginBottom: "25px",
@@ -25,31 +28,27 @@ export default function PortfolioComponent() {
 
     return (
         <div>
-            <h3 style={headTextStyles}>My work:</h3>
-            <div style={colStyles}>
-                <div>
-                    <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://github.com/jamie29w/snap-crm">
+            <h3 style={headTextStyles}>Recent projects:</h3>
+            <div style={portfolioViewStyles}>
+                <div className="containerStyles">
+                    <Link to="/snap-crm" component={SnapCRMComponent}>
                         <img
                             src={snapCrmUrl}
-                            className="imageStyles"
+                            className="imageStyles, imageLinkStyles"
                             alt="Screenshot of Snap CRM, built with React, NodeJS, and MongoDB. Click here to see the repo on Github."
                         />
-                    </a>
+                    </Link>
                 </div>
                 <div className="containerStyles">
-                    <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://github.com/vschool-september-2017/native-weather">
+                    <Link
+                        to="/nativeweather"
+                        component={NativeWeatherComponent}>
                         <img
                             src={nativeWeatherUrl}
-                            className="imageStyles"
+                            className="imageStyles, imageLinkStyles"
                             alt="Screenshot of Native-Weather app, built with React Native. Click here to see the repo on Github."
                         />
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

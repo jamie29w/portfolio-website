@@ -1,7 +1,8 @@
 import React from "react";
+import SkillsComponent from "../skills/Component";
 
 function HomeComponent(props) {
-    const colStyles = {
+    const homeViewStyles = {
         backgroundColor: "rgba(42, 46, 55, .7)",
         color: "#DCDCDC",
         marginTop: "20px",
@@ -50,32 +51,37 @@ function HomeComponent(props) {
     };
 
     return (
-        <div style={colStyles}>
-            <h3 style={headTextStyles}>Hello world,</h3>
+        <div>
+            <div style={homeViewStyles}>
+                <h3 style={headTextStyles}>Hello world,</h3>
 
-            <h3 style={bodyTextStyles}>
-                I{`'`}m all about getting more great things done. I geek out
-                over time value and effectiveness. Call me old-fashioned, but I
-                believe the best use of technology is to enable people to do
-                more of the things that matter most.
-            </h3>
-            <h3 style={bodyTextStyles}>
-                I also believe great user interface is born of a romance between
-                clear purpose and elegance. Content is king. And negative space,
-                as his ambassador, emphasizes his greatness.
-            </h3>
-            <h3 style={bodyTextStyles}>
-                As fruit of these passions, I love creating new and better ways
-                to do more and equipping others to as well. If you feel the
-                same, let{`'`}s change the world together.
-            </h3>
-            <h3 style={tldrStyles}>
-                tl;dr Value-Added <span style={punctuationStyles}>|</span>{" "}
-                Elegant UX/UI <span style={punctuationStyles}>|</span>{" "}
-                Empowering Others
-            </h3>
-            <h3 style={bodyTextStyles}>Cheers!</h3>
-            <h3 style={bodyTextStyles}>-Jamie W</h3>
+                <h3 style={bodyTextStyles}>
+                    I{`'`}m all about getting more great things done. I geek out
+                    over time value and effectiveness. Call me old-fashioned,
+                    but I believe the best use of technology is to enable people
+                    to do more of the things that matter most.
+                </h3>
+                <h3 style={bodyTextStyles}>
+                    I also believe great user interface is born of a romance
+                    between clear purpose and elegance. Content is king. And
+                    negative space, as his ambassador, emphasizes his greatness.
+                </h3>
+                <h3 style={bodyTextStyles}>
+                    As fruit of these passions, I love creating new and better
+                    ways to do more and equipping others to as well. If you feel
+                    the same, let{`'`}s change the world together.
+                </h3>
+                <h3 style={tldrStyles}>
+                    tl;dr Value-Added <span style={punctuationStyles}>|</span>{" "}
+                    Elegant UX/UI <span style={punctuationStyles}>|</span>{" "}
+                    Empowering Others
+                </h3>
+                <h3 style={bodyTextStyles}>Cheers!</h3>
+                <h3 style={bodyTextStyles}>-Jamie W</h3>
+            </div>
+            <div>
+                <SkillsComponent />
+            </div>
         </div>
     );
 }
