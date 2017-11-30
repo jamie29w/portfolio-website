@@ -61,7 +61,7 @@ export default function NativeWeatherComponent() {
             </div>
 
             <h2 style={headTextStyles}>
-                See the{" "}
+                See the code at my{" "}
                 <a
                     target="_blank"
                     rel="noopener noreferrer"
