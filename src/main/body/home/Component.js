@@ -37,7 +37,6 @@ function HomeComponent(props) {
         fontFamily: "'Lato', sans-serif",
         fontSize: ".55em",
         fontWeight: "100",
-        fontStyle: "italic",
         marginBottom: "20px",
         textAlign: "justify",
         lineHeight: "125%",
@@ -56,25 +55,30 @@ function HomeComponent(props) {
                 <h3 style={headTextStyles}>Hello world,</h3>
 
                 <h3 style={bodyTextStyles}>
-                    I{`'`}m all about getting more great things done. I geek out
-                    over time value and effectiveness. Call me old-fashioned,
-                    but I believe the best use of technology is to enable people
-                    to do more of the things that matter most.
+                    I{`'`}m a seasoned professional, new to the development
+                    world, looking for a company that wants to build great
+                    technology and a better humanity.
+                </h3>
+
+                <h3 style={bodyTextStyles}>
+                    I've worked alongside senior leaders for more than half of
+                    my career and place a high value on effectiveness over time
+                    spent. I believe the best use of technology is to enable
+                    people to do more of the things that matter most.
                 </h3>
                 <h3 style={bodyTextStyles}>
                     I also believe great user interface is born of a romance
                     between clear purpose and elegance. Content is king. And
-                    negative space, as his ambassador, emphasizes his greatness.
+                    design, as his ambassador, emphasizes his greatness.
                 </h3>
                 <h3 style={bodyTextStyles}>
                     As fruit of these passions, I love creating new and better
-                    ways to do more and equipping others to as well. If you feel
-                    the same, let{`'`}s change the world together.
+                    ways to do more good and equipping others to as well. If you
+                    feel the same, let{`'`}s change the world together.
                 </h3>
                 <h3 style={tldrStyles}>
-                    tl;dr Value-Added <span style={punctuationStyles}>|</span>{" "}
-                    Elegant UX/UI <span style={punctuationStyles}>|</span>{" "}
-                    Empowering Others
+                    Value-Added <span style={punctuationStyles}>|</span> UX/UI{" "}
+                    <span style={punctuationStyles}>|</span> Empowering Others
                 </h3>
                 <h3 style={bodyTextStyles}>Cheers!</h3>
                 <h3 style={bodyTextStyles}>-Jamie W</h3>

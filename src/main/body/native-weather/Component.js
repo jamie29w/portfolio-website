@@ -54,7 +54,7 @@ export default function NativeWeatherComponent() {
             <div className="nativeWeatherRowStyles">
                 <img className="imageStyles" src={nativeWeatherLogin} alt="" />
                 <h2 style={headTextStyles}>
-                    And just becuase we could, we incorporated user
+                    And just because we could, we incorporated user
                     authentication. Your weather is your business and yours
                     alone.
                 </h2>
