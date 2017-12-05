@@ -27,6 +27,28 @@ export default function SnapCRMComponent() {
     return (
         <div style={snapCRMViewStyles}>
             <h2 style={headTextStyles}>
+                Demo it{" "}
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="http://snap-crm.jamiew.io/"
+                    className="blueLinks">
+                    here
+                </a>
+                .
+            </h2>
+            <h2 style={headTextStyles}>
+                See the code at my{" "}
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/jamie29w/snap-crm"
+                    className="blueLinks">
+                    Github repo
+                </a>
+                .
+            </h2>
+            <h2 style={headTextStyles}>
                 Snap CRM is a lightweight Customer Relationship Managment tool I
                 created with my wife and her photography business in mind.
                 Photographers can use Snap CRM to keep track of their upcoming
@@ -45,18 +67,6 @@ export default function SnapCRMComponent() {
                 the front end and MongoDB and NodeJS on the back end.
             </h2>
             <img className="imageStyles" src={snapCrmResponsiveImg} alt="" />
-
-            <h2 style={headTextStyles}>
-                See the code at my{" "}
-                <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://github.com/jamie29w/snap-crm"
-                    className="blueLinks">
-                    Github repo
-                </a>
-                .
-            </h2>
         </div>
     );
 }
