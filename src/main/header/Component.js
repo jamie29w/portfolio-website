@@ -41,7 +41,7 @@ function HeaderComponent(props) {
         marginTop: "10px",
         fontWeight: "100"
     };
-    // console.log("props.isHome is ", props.isHome);
+
     return (
         <div style={props.isHome ? tallStyles : shortStyles}>
             <div style={textContainer}>
