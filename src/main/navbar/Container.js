@@ -2,8 +2,8 @@ import React from "react";
 import NavbarComponent from "./Component";
 
 class NavbarContainer extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             showNav: true
         };
@@ -27,7 +27,13 @@ class NavbarContainer extends React.Component {
     }
 
     render() {
-        return <NavbarComponent showNav={this.state.showNav} />;
+        return (
+            <NavbarComponent
+                showNav={this.state.showNav}
+                handleHome={this.props.handleHome}
+                handleNotHome={this.props.handleNotHome}
+            />
+        );
     }
 }
 

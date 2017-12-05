@@ -23,7 +23,7 @@ function BodyComponent(props) {
                     <Switch>
                         <Route exact path="/" component={HomeComponent} />
                         <Route
-                            path="/Portfolio"
+                            path="/portfolio"
                             component={PortfolioComponent}
                         />
                         <Route path="/snap-crm" component={SnapCRMComponent} />

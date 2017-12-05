@@ -2,7 +2,7 @@ import React from "react";
 import backgroundUrl from "../../assets/marina-sparks.jpg";
 
 function HeaderComponent(props) {
-    const divStyles = {
+    const tallStyles = {
         background: `url(${backgroundUrl}) no-repeat center center`,
         backgroundSize: "cover",
         WebkitBackgroundSize: "cover",
@@ -17,7 +17,13 @@ function HeaderComponent(props) {
         zIndex: "50",
         display: "flex",
         flexDirection: "row-reverse",
-        alignItems: "flex-end"
+        alignItems: "flex-end",
+        transition: "ease-in-out .75s"
+    };
+
+    const shortStyles = {
+        ...tallStyles,
+        height: "40vh"
     };
 
     const textContainer = {
@@ -35,8 +41,9 @@ function HeaderComponent(props) {
         marginTop: "10px",
         fontWeight: "100"
     };
+    // console.log("props.isHome is ", props.isHome);
     return (
-        <div style={divStyles}>
+        <div style={props.isHome ? tallStyles : shortStyles}>
             <div style={textContainer}>
                 <h1 style={headText}>Jamie Woodmancy</h1>
                 <h2 style={subHeadText}>Web & App Developer</h2>

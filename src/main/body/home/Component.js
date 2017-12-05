@@ -55,21 +55,22 @@ function HomeComponent(props) {
                 <h3 style={headTextStyles}>Hello world,</h3>
 
                 <h3 style={bodyTextStyles}>
-                    I{`'`}m a seasoned professional, new to the development
-                    world, looking for a company that wants to build great
-                    technology and a better humanity.
+                    I{`'`}m a seasoned professional turned programmer, looking
+                    for a company that wants to improve lives by building great
+                    tools.
                 </h3>
 
                 <h3 style={bodyTextStyles}>
                     I've worked alongside senior leaders for more than half of
-                    my career and place a high value on effectiveness over time
-                    spent. I believe the best use of technology is to enable
-                    people to do more of the things that matter most.
+                    my career and so place a high value on time effectiveness
+                    over time spent. I believe the best use of technology is to
+                    enable people to do more of the things that matter most.
                 </h3>
                 <h3 style={bodyTextStyles}>
                     I also believe great user interface is born of a romance
-                    between clear purpose and elegance. Content is king. And
-                    design, as his ambassador, emphasizes his greatness.
+                    between clear purpose and an intuitive experience. Content
+                    is king. Design is his ambassador and should point to his
+                    greatness.
                 </h3>
                 <h3 style={bodyTextStyles}>
                     As fruit of these passions, I love creating new and better
