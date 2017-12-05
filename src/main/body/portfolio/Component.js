@@ -1,8 +1,6 @@
 import React from "react";
 import snapCrmUrl from "../../../assets/snap-crm-main.png";
 import nativeWeatherUrl from "../../../assets/native-weather-today.png";
-import SnapCRMComponent from "../snap-crm/Component";
-import NativeWeatherComponent from "../native-weather/Component";
 import { Link } from "react-router-dom";
 
 export default function PortfolioComponent() {
@@ -31,7 +29,7 @@ export default function PortfolioComponent() {
             <h3 style={headTextStyles}>Recent projects:</h3>
             <div style={portfolioViewStyles}>
                 <div className="containerStyles">
-                    <Link to="/snap-crm" component={SnapCRMComponent}>
+                    <Link to="/snap-crm">
                         <img
                             src={snapCrmUrl}
                             className="imageStyles, imageLinkStyles"
@@ -40,9 +38,7 @@ export default function PortfolioComponent() {
                     </Link>
                 </div>
                 <div className="containerStyles">
-                    <Link
-                        to="/nativeweather"
-                        component={NativeWeatherComponent}>
+                    <Link to="/nativeweather">
                         <img
                             src={nativeWeatherUrl}
                             className="imageStyles, imageLinkStyles"

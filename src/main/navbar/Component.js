@@ -36,11 +36,14 @@ function Navbar(props) {
                     </a>
                 </span>
 
-                <Link to="/" className="links">
+                <Link onClick={props.handleHome} to="/" className="links">
                     Home
                 </Link>
 
-                <Link to="/portfolio" className="links">
+                <Link
+                    onClick={props.handleNotHome}
+                    to="/portfolio"
+                    className="links">
                     Portfolio
                 </Link>
 
@@ -78,11 +81,14 @@ function Navbar(props) {
                     </a>
                 </span>
 
-                <Link to="/" className="links">
+                <Link to="/" className="links" onClick={props.handleHome}>
                     Home
                 </Link>
 
-                <Link to="/portfolio" className="links">
+                <Link
+                    to="/portfolio"
+                    className="links"
+                    onClick={props.handleNotHome}>
                     Portfolio
                 </Link>
 
