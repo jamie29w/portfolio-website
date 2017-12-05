@@ -40,22 +40,22 @@ function Navbar(props) {
                     Home
                 </Link>
 
-                <Link
-                    onClick={props.handleNotHome}
-                    to="/portfolio"
-                    className="links">
-                    Portfolio
-                </Link>
-
                 <span className="links">
                     <a
                         target="_blank"
                         rel="noopener noreferrer"
                         className="links"
                         href={pdf}>
-                        Resume
+                        Contact & Resume
                     </a>
                 </span>
+
+                <Link
+                    onClick={props.handleNotHome}
+                    to="/portfolio"
+                    className="links">
+                    Portfolio
+                </Link>
 
                 <span className="iconLinks">
                     <a
@@ -85,22 +85,22 @@ function Navbar(props) {
                     Home
                 </Link>
 
-                <Link
-                    to="/portfolio"
-                    className="links"
-                    onClick={props.handleNotHome}>
-                    Portfolio
-                </Link>
-
                 <span className="links">
                     <a
                         target="_blank"
                         rel="noopener noreferrer"
                         className="links"
                         href={pdf}>
-                        Resume
+                        Contact & Resume
                     </a>
                 </span>
+
+                <Link
+                    to="/portfolio"
+                    className="links"
+                    onClick={props.handleNotHome}>
+                    Portfolio
+                </Link>
 
                 <span className="iconLinks">
                     <a
