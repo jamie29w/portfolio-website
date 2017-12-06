@@ -21,16 +21,22 @@ function BodyComponent(props) {
             <div style={divStyles}>
                 <div>
                     <Switch>
-                        <Route exact path="/" component={HomeComponent} />
                         <Route
+                            exact
                             path="/portfolio"
                             component={PortfolioComponent}
                         />
-                        <Route path="/snap-crm" component={SnapCRMComponent} />
                         <Route
+                            exact
+                            path="/snap-crm"
+                            component={SnapCRMComponent}
+                        />
+                        <Route
+                            exact
                             path="/nativeweather"
                             component={NativeWeatherComponent}
                         />
+                        <Route path="/" component={HomeComponent} />
                     </Switch>
                 </div>
             </div>
