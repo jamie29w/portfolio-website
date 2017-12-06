@@ -2646,7 +2646,7 @@ example:
 ```
 
 Note that in order to support routers that use HTML5 `pushState` API, you may
-want to rename the `index.html` in your build folder to `index.html` before
+want to rename the `index.html` in your build folder to `200.html` before
 deploying to Surge. This
 [ensures that every URL falls back to that file](https://surge.sh/help/adding-a-200-page-for-client-side-routing).
 
