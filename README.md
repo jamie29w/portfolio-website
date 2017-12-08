@@ -1,6 +1,6 @@
 # Portfolio Website
 
-My first fully deployed Single Page App, built with React, and fully responsive design. I built this site to act as a landing page to make my programming portfolio, resume, and social profiles accessible to prospective employers and business partners.
+My first fully deployed Single Page App, built with React and fully responsive design. I built this site to act as a landing page to make my programming portfolio, resume, and social profiles accessible to prospective employers and business partners.
 
 
 # How to see the code and demo it
