@@ -10,7 +10,7 @@ My first fully deployed Single Page App, built with React and fully responsive d
 git clone https://github.com/jamie29w/portfolio-website
 
 //Go into the repository/client
-cd portfolio-website/client
+cd portfolio-website
 
 //Install app dependencies
 yarn install
