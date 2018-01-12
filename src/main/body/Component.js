@@ -6,37 +6,39 @@ import NativeWeatherComponent from "./native-weather/Component";
 import { Route, Switch } from "react-router-dom";
 
 function BodyComponent(props) {
-    const divStyles = {
-        alignContent: "center",
-        width: "80%",
-        marginLeft: "10%",
-        marginRight: "10%",
-        textAlign: "center",
-        flex: "1",
-        flexDirection: "row"
+    const styles = {
+        divStyles: {
+            alignContent: "center",
+            flex: "1",
+            flexDirection: "row",
+            marginLeft: "10%",
+            marginRight: "10%",
+            textAlign: "center",
+            width: "80%"
+        }
     };
 
     return (
         <h2>
-            <div style={divStyles}>
+            <div style={styles.divStyles}>
                 <div>
                     <Switch>
                         <Route
                             exact
-                            path="/portfolio"
                             component={PortfolioComponent}
+                            path="/portfolio"
                         />
                         <Route
                             exact
-                            path="/snap-crm"
                             component={SnapCRMComponent}
+                            path="/snap-crm"
                         />
                         <Route
                             exact
-                            path="/nativeweather"
                             component={NativeWeatherComponent}
+                            path="/nativeweather"
                         />
-                        <Route path="/" component={HomeComponent} />
+                        <Route component={HomeComponent} path="/" />
                     </Switch>
                 </div>
             </div>

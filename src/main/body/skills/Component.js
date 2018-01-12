@@ -1,91 +1,88 @@
 import React from "react";
-
-import reactIcon from "../../../assets/react-logo-1000-transparent.png";
-import reduxIcon from "../../../assets/redux-logo.png";
-import html5Icon from "../../../assets/html5-512.png";
-import css3Icon from "../../../assets/css3-512.png";
 import bootstrapIcon from "../../../assets/bootstrap-stack.png";
+import css3Icon from "../../../assets/css3-512.png";
+import html5Icon from "../../../assets/html5-512.png";
 import jsIcon from "../../../assets/js-icon-transparent.png";
 import nodeJsIcon from "../../../assets/nodejs-transparent.png";
+import reactIcon from "../../../assets/react-logo-1000-transparent.png";
+import reduxIcon from "../../../assets/redux-logo.png";
 
 function SkillsComponent() {
-    const containerStyles = {
-        width: "100%",
-        backgroundColor: "#f6f4f5",
-        color: "#2A2E37",
-        marginTop: "20px",
-        marginBottom: "20px",
-        textAlign: "center",
-        display: "flex",
-        flexDirection: "row",
-        flexWrap: "wrap",
-        alignItems: "center",
-        justifyContent: "space-around"
-    };
-
-    const reactIconStyles = {
-        background: `url(${reactIcon}) no-repeat center center`,
+    //spread squreIconProps styling over all icon and add custom height & width if needed
+    const squareIconProps = {
         backgroundSize: "cover",
         height: "112px",
         width: "112px"
     };
-    const reduxIconStyles = {
-        background: `url(${reduxIcon}) no-repeat center center`,
-        backgroundSize: "cover",
-        height: "95px",
-        width: "105px"
-    };
-    const html5IconStyles = {
-        background: `url(${html5Icon}) no-repeat center center`,
-        backgroundSize: "cover",
-        height: "100px",
-        width: "100px"
-    };
-    const css3IconStyles = {
-        background: `url(${css3Icon}) no-repeat center center`,
-        backgroundSize: "cover",
-        height: "112px",
-        width: "112px"
-    };
-    const boostrapIconStyles = {
-        background: `url(${bootstrapIcon}) no-repeat center center`,
-        backgroundSize: "cover",
-        height: "112px",
-        width: "112px"
-    };
-    const jsIconStyles = {
-        background: `url(${jsIcon}) no-repeat center center`,
-        backgroundSize: "cover",
-        height: "112px",
-        width: "112px"
-    };
-    const nodeJsIconStyles = {
-        background: `url(${nodeJsIcon}) no-repeat center center`,
-        backgroundSize: "cover",
-        height: "100px",
-        width: "164px"
-    };
-
-    const headTextStyles = {
-        color: "rgba(42, 46, 55. .7)",
-        fontSize: ".9em",
-        fontFamily: "'Lato', sans-serif",
-        fontWeight: "300"
+    const styles = {
+        boostrapIcon: {
+            background: `url(${bootstrapIcon}) no-repeat center center`,
+            ...squareIconProps
+        },
+        container: {
+            alignItems: "center",
+            backgroundColor: "#f6f4f5",
+            color: "#2A2E37",
+            display: "flex",
+            flexDirection: "row",
+            flexWrap: "wrap",
+            justifyContent: "space-around",
+            marginTop: "20px",
+            marginBottom: "20px",
+            textAlign: "center",
+            width: "100%"
+        },
+        css3Icon: {
+            background: `url(${css3Icon}) no-repeat center center`,
+            ...squareIconProps
+        },
+        headText: {
+            color: "rgba(42, 46, 55. .7)",
+            fontFamily: "'Lato', sans-serif",
+            fontSize: ".9em",
+            fontWeight: "300"
+        },
+        html5Icon: {
+            background: `url(${html5Icon}) no-repeat center center`,
+            ...squareIconProps,
+            height: "100px",
+            width: "100px"
+        },
+        jsIcon: {
+            background: `url(${jsIcon}) no-repeat center center`,
+            ...squareIconProps
+        },
+        nodeJsIcon: {
+            background: `url(${nodeJsIcon}) no-repeat center center`,
+            ...squareIconProps,
+            height: "100px",
+            width: "164px"
+        },
+        reactIcon: {
+            background: `url(${reactIcon}) no-repeat center center`,
+            ...squareIconProps
+        },
+        reduxIcon: {
+            background: `url(${reduxIcon}) no-repeat center center`,
+            ...squareIconProps,
+            height: "95px",
+            width: "105px"
+        }
     };
 
     return (
         <div>
             <div>
-                <h3 style={headTextStyles}>Versed in:</h3>
+                <h3 style={styles.headText}>Versed in:</h3>
             </div>
-            <div style={containerStyles}>
-                <i style={reactIconStyles} />
-                <i style={reduxIconStyles} />
-                <i style={html5IconStyles} />
-                <i style={css3IconStyles} />
-                <i style={boostrapIconStyles} />
-                <i style={jsIconStyles} />
-                <i style={nodeJsIconStyles} />
+            <div style={styles.container}>
+                <i style={styles.reactIcon} />
+                <i style={styles.reduxIcon} />
+                <i style={styles.html5Icon} />
+                <i style={styles.css3Icon} />
+                <i style={styles.boostrapIcon} />
+                <i style={styles.jsIcon} />
+                <i style={styles.nodeJsIcon} />
             </div>
         </div>
     );
