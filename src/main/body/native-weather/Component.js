@@ -4,33 +4,34 @@ import nativeWeatherForecast from "../../../assets/native-weather-forecast.png";
 import nativeWeatherLogin from "../../../assets/native-weather-login.png";
 
 export default function NativeWeatherComponent() {
-    const nativeWeatherViewStyles = {
-        alignContent: "center",
-        width: "100%",
-        textAlign: "center",
-        flex: "1",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-around",
-        flexWrap: "wrap",
-        alignItems: "justify"
-    };
-
-    const headTextStyles = {
-        fontFamily: "'Lato', sans-serif",
-        fontWeight: "300",
-        fontSize: ".7em",
-        margin: "15px 15px",
-        textAlign: "left",
-        minWidth: "175px",
-        flexWrap: "no-wrap"
+    const styles = {
+        headText: {
+            fontFamily: "'Lato', sans-serif",
+            fontWeight: "300",
+            fontSize: ".7em",
+            margin: "15px 15px",
+            textAlign: "left",
+            minWidth: "175px",
+            flexWrap: "no-wrap"
+        },
+        nativeWeatherView: {
+            alignContent: "center",
+            width: "100%",
+            textAlign: "center",
+            flex: "1",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-around",
+            flexWrap: "wrap",
+            alignItems: "justify"
+        }
     };
 
     return (
-        <div style={nativeWeatherViewStyles}>
+        <div style={styles.nativeWeatherView}>
             <div className="nativeWeatherRowStyles">
                 <img className="imageStyles" src={nativeWeatherToday} alt="" />
-                <h2 style={headTextStyles}>
+                <h2 style={styles.headText}>
                     Native Weather was my first foray into mobile programming,
                     pair programming, and multi-user version control.
                 </h2>
@@ -42,7 +43,7 @@ export default function NativeWeatherComponent() {
                     src={nativeWeatherForecast}
                     alt=""
                 />
-                <h2 style={headTextStyles}>
+                <h2 style={styles.headText}>
                     We queried the{" "}
                     <a className="blueLinks" href="https://darksky.net">
                         Dark Sky API
@@ -53,14 +54,14 @@ export default function NativeWeatherComponent() {
             </div>
             <div className="nativeWeatherRowStyles">
                 <img className="imageStyles" src={nativeWeatherLogin} alt="" />
-                <h2 style={headTextStyles}>
+                <h2 style={styles.headText}>
                     And just because we could, we incorporated user
                     authentication. Your weather is your business and yours
                     alone.
                 </h2>
             </div>
 
-            <h2 style={headTextStyles}>
+            <h2 style={styles.headText}>
                 See the code at my{" "}
                 <a
                     target="_blank"
