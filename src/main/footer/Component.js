@@ -4,18 +4,18 @@ const pdf = "jamie-woodmancy-resume-2017.pdf";
 function FooterComponent(props) {
     const styles = {
         container: {
+            alignItems: "center",
             backgroundColor: "rgba(42, 46, 55, .7)",
-            width: "100%",
-            padding: "15px",
-            position: "relative",
             bottom: "-15px",
-            fontSize: "14px",
-            textAlign: "center",
             display: "flex",
             flexDirection: "row",
             flexWrap: "wrap",
-            alignItems: "center",
-            justifyContent: "space-around"
+            fontSize: "14px",
+            justifyContent: "space-around",
+            padding: "15px",
+            position: "relative",
+            textAlign: "center",
+            width: "100%"
         }
     };
 
@@ -23,11 +23,11 @@ function FooterComponent(props) {
         <div style={styles.container}>
             <span className="a">
                 <a
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="links"
-                    href="https://github.com/jamie29w">
-                    <i className="fa fa-github fa-lg" aria-hidden="true" />
+                    href="https://github.com/jamie29w"
+                    rel="noopener noreferrer"
+                    target="_blank">
+                    <i aria-hidden="true" className="fa fa-github fa-lg" />
                 </a>
             </span>
 
@@ -40,10 +40,10 @@ function FooterComponent(props) {
             </span>
             <span className="c">
                 <a
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="links"
-                    href={pdf}>
+                    href={pdf}
+                    rel="noopener noreferrer"
+                    target="_blank">
                     View My Resume
                 </a>
             </span>
@@ -54,13 +54,13 @@ function FooterComponent(props) {
             </span>
             <span className="e">
                 <a
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="links"
-                    href="https://www.linkedin.com/in/jamiewoodmancy/">
+                    href="https://www.linkedin.com/in/jamiewoodmancy/"
+                    rel="noopener noreferrer"
+                    target="_blank">
                     <i
-                        className="fa fa-linkedin-square fa-lg"
                         aria-hidden="true"
+                        className="fa fa-linkedin-square fa-lg"
                     />
                 </a>
             </span>

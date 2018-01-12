@@ -11,6 +11,11 @@ class NavbarContainer extends React.Component {
         this.handleResize = this.handleResize.bind(this);
     }
 
+    componentDidMount() {
+        this.handleResize();
+        window.addEventListener("resize", this.handleResize);
+    }
+
     handleResize() {
         let showNav = window.innerWidth < 480 ? true : false;
         this.setState(prevState => {
@@ -21,17 +26,12 @@ class NavbarContainer extends React.Component {
         });
     }
 
-    componentDidMount() {
-        this.handleResize();
-        window.addEventListener("resize", this.handleResize);
-    }
-
     render() {
         return (
             <NavbarComponent
-                showNav={this.state.showNav}
                 handleHome={this.props.handleHome}
                 handleNotHome={this.props.handleNotHome}
+                showNav={this.state.showNav}
             />
         );
     }

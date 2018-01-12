@@ -9,12 +9,12 @@ function BodyComponent(props) {
     const styles = {
         divStyles: {
             alignContent: "center",
-            width: "80%",
+            flex: "1",
+            flexDirection: "row",
             marginLeft: "10%",
             marginRight: "10%",
             textAlign: "center",
-            flex: "1",
-            flexDirection: "row"
+            width: "80%"
         }
     };
 
@@ -25,20 +25,20 @@ function BodyComponent(props) {
                     <Switch>
                         <Route
                             exact
-                            path="/portfolio"
                             component={PortfolioComponent}
+                            path="/portfolio"
                         />
                         <Route
                             exact
-                            path="/snap-crm"
                             component={SnapCRMComponent}
+                            path="/snap-crm"
                         />
                         <Route
                             exact
-                            path="/nativeweather"
                             component={NativeWeatherComponent}
+                            path="/nativeweather"
                         />
-                        <Route path="/" component={HomeComponent} />
+                        <Route component={HomeComponent} path="/" />
                     </Switch>
                 </div>
             </div>

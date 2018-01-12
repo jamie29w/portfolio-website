@@ -7,28 +7,28 @@ function HomeComponent(props) {
             fontFamily: "'Lato', sans-serif",
             fontSize: ".55em",
             fontWeight: "300",
-            marginBottom: "20px",
-            textAlign: "justify",
+            letterSpacing: "0px",
             lineHeight: "125%",
             marginLeft: "25px",
             marginRight: "25px",
-            letterSpacing: "0px"
+            marginBottom: "20px",
+            textAlign: "justify"
         },
         headText: {
             fontFamily: "'Lato', sans-serif",
             fontWeight: "100",
             fontStyle: "italic",
             fontSize: ".9em",
-            marginTop: "25px",
             marginLeft: "25px",
+            marginTop: "25px",
             textAlign: "justify"
         },
         homeView: {
             backgroundColor: "rgba(42, 46, 55, .7)",
+            borderRadius: "10px",
             color: "#DCDCDC",
             marginTop: "20px",
             marginBottom: "25px",
-            borderRadius: "10px",
             padding: "20px"
         },
         punctuation: {
@@ -39,12 +39,12 @@ function HomeComponent(props) {
             fontFamily: "'Lato', sans-serif",
             fontSize: ".55em",
             fontWeight: "100",
-            marginBottom: "20px",
-            textAlign: "justify",
+            letterSpacing: "0px",
             lineHeight: "125%",
             marginLeft: "25px",
             marginRight: "25px",
-            letterSpacing: "0px"
+            marginBottom: "20px",
+            textAlign: "justify"
         }
     };
 

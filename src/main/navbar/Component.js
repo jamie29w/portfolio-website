@@ -6,17 +6,17 @@ const pdf = "jamie-woodmancy-resume-2017.pdf";
 function Navbar(props) {
     const styles = {
         flexContainer: {
-            width: "100%",
-            position: "fixed",
-            backgroundColor: "rgba(39, 58, 100, .9)",
-            height: "6vh",
-            minHeight: "35px",
-            fontFamily: "'Lato', sans-serif",
-            display: "flex",
-            showNavection: "row",
-            flexWrap: "nowrap",
             alignItems: "center",
+            backgroundColor: "rgba(39, 58, 100, .9)",
+            display: "flex",
+            fontFamily: "'Lato', sans-serif",
+            flexWrap: "nowrap",
+            height: "6vh",
             justifyContent: "space-around",
+            minHeight: "35px",
+            position: "fixed",
+            showNavection: "row",
+            width: "100%",
             zIndex: "100"
         },
         hideMenu: {

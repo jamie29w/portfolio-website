@@ -5,31 +5,32 @@ function HeaderComponent(props) {
     const styles = {
         headText: {
             fontSize: "4.5em",
-            marginBottom: "10px",
-            fontWeight: "100"
+            fontWeight: "100",
+            marginBottom: "10px"
         },
         subHeadText: {
             fontSize: "2.5em",
-            marginTop: "10px",
-            fontWeight: "100"
+            fontWeight: "100",
+            marginTop: "10px"
         },
         tall: {
+            alignItems: "flex-end",
             background: `url(${backgroundUrl}) no-repeat center center`,
             backgroundSize: "cover",
             WebkitBackgroundSize: "cover",
             MozBackgroundSize: "cover",
             OBackgroundSize: "cover",
-            width: "100%",
-            minWidth: "375px",
-            height: "75vh",
-            postion: "relative",
-            fontFamily: "'Lato', sans-serif",
+
             color: "#DCDCDC",
-            zIndex: "50",
             display: "flex",
             flexDirection: "row-reverse",
-            alignItems: "flex-end",
-            transition: "ease-in-out .75s"
+            fontFamily: "'Lato', sans-serif",
+            height: "75vh",
+            minWidth: "375px",
+            postion: "relative",
+            transition: "ease-in-out .75s",
+            width: "100%",
+            zIndex: "50"
         },
 
         textContainer: {
@@ -38,6 +39,7 @@ function HeaderComponent(props) {
         }
     };
 
+    //spread styles.tall and update height only
     const responsiveStyles = {
         short: {
             ...styles.tall,
