@@ -1,3 +1,4 @@
+/* Element Styling Below */
 body {
     font-family: "Lato", sans-serif;
     font-weight: 100;
@@ -6,12 +7,26 @@ body {
     -webkit-text-stroke: 1px transparent;
 }
 
-.links {
-    color: rgba(246, 244, 245, 0.65);
+/* Class Styling Below */
+.blueLinks {
+    color: rgba(39, 58, 100, 0.7);
     font-family: "Lato", sans-serif;
     font-weight: 300;
     text-decoration: none;
     padding: 5px 0px;
+}
+
+.bluelinks:focus,
+.bluelinks:hover {
+    color: rgba(39, 58, 100, 1);
+    text-decoration: none;
+}
+
+.containerStyles {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex: 0 1 auto;
 }
 
 .iconLinks {
@@ -23,29 +38,51 @@ body {
     padding: 5px 0px;
 }
 
-.links:hover,
-.links:focus,
-.iconLinks:hover,
-.iconLinks:focus {
-    color: rgba(246, 244, 245, 1);
-    text-decoration: none;
-}
-
-.blueLinks {
-    color: rgba(39, 58, 100, 0.7);
+.links {
+    color: rgba(246, 244, 245, 0.65);
     font-family: "Lato", sans-serif;
     font-weight: 300;
     text-decoration: none;
     padding: 5px 0px;
 }
 
-.blueLinks:hover,
-.blueLinks:focus {
-    color: rgba(39, 58, 100, 1);
+.iconLinks:focus,
+.iconLinks:hover,
+.links:focus,
+.links:hover {
+    color: rgba(246, 244, 245, 1);
     text-decoration: none;
 }
 
+.imageLinkStyles {
+    max-height: 450px;
+    width: auto;
+    border-radius: 2px;
+}
+
+.imageLinkStyles:hover {
+    opacity: 0.75;
+}
+
+.imageStyles {
+    max-height: 450px;
+    width: auto;
+    border-radius: 2px;
+    margin: 15px;
+}
+
+.nativeWeatherRowStyles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
 /*Responsive (and related) styling below*/
+
+.bm-burger-button {
+    display: none;
+}
 
 .a {
     flex-wrap: wrap;
@@ -85,40 +122,6 @@ body {
     font-size: 35px;
     margin-top: 8px;
     margin-bottom: 8px;
-}
-
-.containerStyles {
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    flex: 0 1 auto;
-}
-
-.imageStyles {
-    max-height: 450px;
-    width: auto;
-    border-radius: 2px;
-    margin: 15px;
-}
-.imageLinkStyles {
-    max-height: 450px;
-    width: auto;
-    border-radius: 2px;
-}
-
-.imageLinkStyles:hover {
-    opacity: 0.75;
-}
-
-.bm-burger-button {
-    display: none;
-}
-
-.nativeWeatherRowStyles {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
 }
 
 @media screen and (max-width: 768px) {
