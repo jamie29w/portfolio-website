@@ -6,19 +6,21 @@ import NativeWeatherComponent from "./native-weather/Component";
 import { Route, Switch } from "react-router-dom";
 
 function BodyComponent(props) {
-    const divStyles = {
-        alignContent: "center",
-        width: "80%",
-        marginLeft: "10%",
-        marginRight: "10%",
-        textAlign: "center",
-        flex: "1",
-        flexDirection: "row"
+    const styles = {
+        divStyles: {
+            alignContent: "center",
+            width: "80%",
+            marginLeft: "10%",
+            marginRight: "10%",
+            textAlign: "center",
+            flex: "1",
+            flexDirection: "row"
+        }
     };
 
     return (
         <h2>
-            <div style={divStyles}>
+            <div style={styles.divStyles}>
                 <div>
                     <Switch>
                         <Route

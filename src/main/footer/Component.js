@@ -2,23 +2,25 @@ import React from "react";
 const pdf = "jamie-woodmancy-resume-2017.pdf";
 
 function FooterComponent(props) {
-    const containerStyles = {
-        backgroundColor: "rgba(42, 46, 55, .7)",
-        width: "100%",
-        padding: "15px",
-        position: "relative",
-        bottom: "-15px",
-        fontSize: "14px",
-        textAlign: "center",
-        display: "flex",
-        flexDirection: "row",
-        flexWrap: "wrap",
-        alignItems: "center",
-        justifyContent: "space-around"
+    const styles = {
+        container: {
+            backgroundColor: "rgba(42, 46, 55, .7)",
+            width: "100%",
+            padding: "15px",
+            position: "relative",
+            bottom: "-15px",
+            fontSize: "14px",
+            textAlign: "center",
+            display: "flex",
+            flexDirection: "row",
+            flexWrap: "wrap",
+            alignItems: "center",
+            justifyContent: "space-around"
+        }
     };
 
     return (
-        <div style={containerStyles}>
+        <div style={styles.container}>
             <span className="a">
                 <a
                     target="_blank"

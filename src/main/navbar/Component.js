@@ -4,23 +4,24 @@ import { stack as Menu } from "react-burger-menu";
 const pdf = "jamie-woodmancy-resume-2017.pdf";
 
 function Navbar(props) {
-    const flexContainerStyles = {
-        width: "100%",
-        position: "fixed",
-        backgroundColor: "rgba(39, 58, 100, .9)",
-        height: "6vh",
-        minHeight: "35px",
-        fontFamily: "'Lato', sans-serif",
-        display: "flex",
-        showNavection: "row",
-        flexWrap: "nowrap",
-        alignItems: "center",
-        justifyContent: "space-around",
-        zIndex: "100"
-    };
-
-    const hideMenu = {
-        display: "none"
+    const styles = {
+        flexContainer: {
+            width: "100%",
+            position: "fixed",
+            backgroundColor: "rgba(39, 58, 100, .9)",
+            height: "6vh",
+            minHeight: "35px",
+            fontFamily: "'Lato', sans-serif",
+            display: "flex",
+            showNavection: "row",
+            flexWrap: "nowrap",
+            alignItems: "center",
+            justifyContent: "space-around",
+            zIndex: "100"
+        },
+        hideMenu: {
+            display: "none"
+        }
     };
 
     return (
@@ -70,7 +71,7 @@ function Navbar(props) {
                     </a>
                 </span>
             </Menu>
-            <div style={props.showNav ? hideMenu : flexContainerStyles}>
+            <div style={props.showNav ? styles.hideMenu : styles.flexContainer}>
                 <span className="iconLinks">
                     <a
                         target="_blank"
