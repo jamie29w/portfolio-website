@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { stack as Menu } from "react-burger-menu";
-const pdf = "jamie-woodmancy-resume-2017.pdf";
+const pdf = "jamie-woodmancy-resume-2018.pdf";
 
 function Navbar(props) {
     const styles = {
