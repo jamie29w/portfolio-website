@@ -4,7 +4,7 @@ import backgroundUrl from "../../assets/marina-sparks.jpg";
 function HeaderComponent(props) {
     const styles = {
         headText: {
-            fontSize: "4.5em",
+            fontSize: "3.5em",
             fontWeight: "100",
             marginBottom: "10px"
         },
@@ -34,7 +34,7 @@ function HeaderComponent(props) {
         },
 
         textContainer: {
-            padding: "4% 8%",
+            margin: "5% 10%",
             textAlign: "right"
         }
     };
