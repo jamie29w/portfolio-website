@@ -12,7 +12,7 @@ export default function NativeWeatherComponent() {
             fontWeight: "300",
             margin: "15px 15px",
             minWidth: "175px",
-            textAlign: "left"
+            textAlign: "center"
         },
         nativeWeatherView: {
             alignContent: "center",
@@ -29,6 +29,17 @@ export default function NativeWeatherComponent() {
 
     return (
         <div style={styles.nativeWeatherView}>
+        <h2 style={styles.headText}>
+                See the code at my{" "}
+                <a
+                    className="blueLinks"
+                    href="https://github.com/vschool-september-2017/native-weather"
+                    rel="noopener noreferrer"
+                    target="_blank">
+                    Github repo
+                </a>
+                .
+            </h2>
             <div className="nativeWeatherRowStyles">
                 <img
                     alt="Screenshot of Native-Weather app Today's Weather"
@@ -68,18 +79,6 @@ export default function NativeWeatherComponent() {
                     alone.
                 </h2>
             </div>
-
-            <h2 style={styles.headText}>
-                See the code at my{" "}
-                <a
-                    className="blueLinks"
-                    href="https://github.com/vschool-september-2017/native-weather"
-                    rel="noopener noreferrer"
-                    target="_blank">
-                    Github repo
-                </a>
-                .
-            </h2>
         </div>
     );
 }
