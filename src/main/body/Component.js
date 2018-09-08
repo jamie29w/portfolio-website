@@ -3,6 +3,7 @@ import HomeComponent from "./home/Component";
 import PortfolioComponent from "./portfolio/Component";
 import SnapCRMComponent from "./snap-crm/Component";
 import NativeWeatherComponent from "./native-weather/Component";
+import WeatherAPIComponent from "./weather-api/Component"
 import { Route, Switch } from "react-router-dom";
 
 function BodyComponent(props) {
@@ -37,6 +38,11 @@ function BodyComponent(props) {
                             exact
                             component={NativeWeatherComponent}
                             path="/nativeweather"
+                        />
+                        <Route
+                            exact
+                            component={WeatherAPIComponent}
+                            path="/weather-api"
                         />
                         <Route component={HomeComponent} path="/" />
                     </Switch>
