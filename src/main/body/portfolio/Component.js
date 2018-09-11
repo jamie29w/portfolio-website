@@ -35,7 +35,7 @@ export default function PortfolioComponent() {
     return (
         <div>
             <h3 style={styles.headText}>
-                Recent projects - Select either to see more:
+                Recent projects - Select one to see more about it:
             </h3>
             <div style={styles.portfolioView}>
                 <div className="containerStyles">
