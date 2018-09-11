@@ -27,7 +27,7 @@ export default function SnapCRMComponent() {
 
     return (
         <div style={styles.snapCRMView}>
-            <h2 style={styles.headText}>
+            {/* <h2 style={styles.headText}>
                 Demo it{" "}
                 <a
                     className="blueLinks"
@@ -37,7 +37,7 @@ export default function SnapCRMComponent() {
                     here
                 </a>
                 .
-            </h2>
+            </h2> */}
             <h2 style={styles.headText}>
                 See the code at my{" "}
                 <a

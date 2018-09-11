@@ -49,7 +49,7 @@ export default function WeatherAPI() {
                 .
             </h2>
             <h2 style={styles.headText}>
-                Lorem ipsum.....
+                A straightforward React app that consumes the Google Places and Dark Sky APIs.
             </h2>
             <img
                 alt="Screenshot of Snap CRM Home Screen"
@@ -57,7 +57,7 @@ export default function WeatherAPI() {
                 src={weatherAPIMainImg}
             />
             <h2 style={styles.headText}>
-                Lorem ipsum.....
+                Enter a location however you want, and get the current weather and 8-day forecast.
             </h2>
             <img
                 alt="Screenshot of Snap CRM Add/Edit Modal"
