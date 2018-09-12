@@ -39,7 +39,7 @@ export default function SnapCRMComponent() {
                 .
             </h2> */}
             <h2 style={styles.headText}>
-                See the code at my{" "}
+                Check the code at my{" "}
                 <a
                     className="blueLinks"
                     href="https://github.com/jamie29w/snap-crm"
