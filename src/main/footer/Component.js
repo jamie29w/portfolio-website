@@ -1,5 +1,5 @@
 import React from "react";
-const pdf = "jamie-woodmancy-resume-2017.pdf";
+const pdf = "jamie-woodmancy-resume-2018.pdf";
 
 function FooterComponent(props) {
     const styles = {
