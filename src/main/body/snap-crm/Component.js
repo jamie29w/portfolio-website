@@ -27,17 +27,17 @@ export default function SnapCRMComponent() {
 
     return (
         <div style={styles.snapCRMView}>
-            {/* <h2 style={styles.headText}>
+            <h2 style={styles.headText}>
                 Demo it{" "}
                 <a
                     className="blueLinks"
-                    href="https://snap-crm.herokuapp.com/"
+                    href="https://snap-crm.now.sh"
                     target="_blank"
                     rel="noopener noreferrer">
                     here
                 </a>
                 .
-            </h2> */}
+            </h2>
             <h2 style={styles.headText}>
                 Check the code at my{" "}
                 <a
