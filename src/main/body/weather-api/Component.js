@@ -39,7 +39,7 @@ export default function WeatherAPI() {
                 Demo it{" "}
                 <a
                     className="blueLinks"
-                    href="weather-api-app.jamiew.io/"
+                    href="http://weather-api-app.jamiew.io/"
                     target="_blank"
                     rel="noopener noreferrer">
                     here
