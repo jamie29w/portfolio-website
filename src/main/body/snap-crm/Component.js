@@ -1,6 +1,6 @@
 import React from "react";
-import snapCrmMain from "../../../assets/snap-crm-main.png";
-import snapCrmModal from "../../../assets/snap-crm-modal.png";
+import snapCrmDesktopMain from "../../../assets/snap-crm-desktop-main.png";
+import snapCrmDesktopModal from "../../../assets/snap-crm-desktop-modal.png";
 import snapCrmMobileMain from "../../../assets/snap-crm-mobile-main.png";
 import snapCrmMobileAdd from "../../../assets/snap-crm-mobile-add.png";
 
@@ -64,7 +64,7 @@ export default function SnapCRMComponent() {
             <img
                 alt="Screenshot of Snap CRM Home Screen"
                 className="imageStyles"
-                src={snapCrmMain}
+                src={snapCrmDesktopMain}
             />
             <h2 style={styles.headText}>
                 Users have the ability to create, update, and remove client
@@ -75,7 +75,7 @@ export default function SnapCRMComponent() {
             <img
                 alt="Screenshot of Snap CRM Add/Edit Modal"
                 className="imageStyles"
-                src={snapCrmModal}
+                src={snapCrmDesktopModal}
             />
             <h2 style={styles.headText}>
                 Responsive and lightweight, Snap CRM was built with ReactJS on
