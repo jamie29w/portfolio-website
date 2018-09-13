@@ -1,7 +1,9 @@
 import React from "react";
-import snapCrmMainImg from "../../../assets/snap-crm-main.png";
-import snapCrmModalImg from "../../../assets/snap-crm-modal.png";
-import snapCrmResponsiveImg from "../../../assets/snap-crm-responsive.png";
+import snapCrmMain from "../../../assets/snap-crm-main.png";
+import snapCrmModal from "../../../assets/snap-crm-modal.png";
+import snapCrmMobileMain from "../../../assets/snap-crm-mobile-main.png";
+import snapCrmMobileAdd from "../../../assets/snap-crm-mobile-add.png";
+
 
 export default function SnapCRMComponent() {
     const styles = {
@@ -11,6 +13,10 @@ export default function SnapCRMComponent() {
             fontWeight: "300",
             margin: "15px 15px",
             textAlign: "justify"
+        },
+        mobileImageStyles: {
+            display: 'flex',
+            flexFlow: 'row wrap',justifyContent: 'space-around'
         },
         snapCRMView: {
             alignContent: "center",
@@ -58,7 +64,7 @@ export default function SnapCRMComponent() {
             <img
                 alt="Screenshot of Snap CRM Home Screen"
                 className="imageStyles"
-                src={snapCrmMainImg}
+                src={snapCrmMain}
             />
             <h2 style={styles.headText}>
                 Users have the ability to create, update, and remove client
@@ -69,17 +75,24 @@ export default function SnapCRMComponent() {
             <img
                 alt="Screenshot of Snap CRM Add/Edit Modal"
                 className="imageStyles"
-                src={snapCrmModalImg}
+                src={snapCrmModal}
             />
             <h2 style={styles.headText}>
                 Responsive and lightweight, Snap CRM was built with ReactJS on
                 the front end and MongoDB and NodeJS on the back end.
             </h2>
-            <img
-                alt="Screenshot of Snap CRM Home Screen Mobile View"
-                className="imageStyles"
-                src={snapCrmResponsiveImg}
-            />
+            <div style={styles.mobileImageStyles}>
+                <img
+                    alt="Screenshot of Snap CRM Home Screen Mobile View"
+                    className="imageStyles"
+                    src={snapCrmMobileMain}
+                />
+                <img
+                    alt="Screenshot of Snap CRM Home Screen Mobile View"
+                    className="imageStyles"
+                    src={snapCrmMobileAdd}
+                />
+            </div>
         </div>
     );
 }

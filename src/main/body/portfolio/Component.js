@@ -1,7 +1,7 @@
 import React from "react";
 import nativeWeatherUrl from "../../../assets/native-weather-today.png";
 import snapCrmUrl from "../../../assets/snap-crm-main.png";
-import weatherUrl from '../../../assets/weather-api-main.png'
+import weatherAPIDesktopForecast from "../../../assets/weather-api-app-desktop-forecast.png"
 import { Link } from "react-router-dom";
 
 export default function PortfolioComponent() {
@@ -59,7 +59,7 @@ export default function PortfolioComponent() {
                 <div className="containerStyles">
                     <Link to="/weather-api">
                         <img
-                            src={weatherUrl}
+                            src={weatherAPIDesktopForecast}
                             className="imageStyles, imageLinkStyles"
                             alt="Screenshot of Weather-API app, built with React and NodeJS."
                         />

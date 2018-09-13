@@ -1,10 +1,10 @@
 import React from "react"
-import weatherAPIMainImg from "../../../assets/weather-api-main.png"
-import weatherAPIForecast from "../../../assets/weather-api-forecast.png"
-import weatherApiAppMobileHome from "../../../assets/weather-api-app-mobile-home.png"
-import weatherApiAppMobileQuery1 from "../../../assets/weather-api-app-mobile-query1.png"
-import weatherApiAppMobileQuery2 from "../../../assets/weather-api-app-mobile-query2.png"
-import weatherApiAppMobileQuery3 from "../../../assets/weather-api-app-mobile-query3.png"
+import weatherAPIAppDesktopMain from "../../../assets/weather-api-app-desktop-main.png"
+import weatherAPIDesktopForecast from "../../../assets/weather-api-app-desktop-forecast.png"
+import weatherAPIAppMobileMain from "../../../assets/weather-api-app-mobile-main.png"
+import weatherAPIAppMobileCurrent from "../../../assets/weather-api-app-mobile-current.png"
+import weatherAPIAppMobileForecast1 from "../../../assets/weather-api-app-mobile-forecast1.png"
+import weatherAPIAppMobileForecast2 from "../../../assets/weather-api-app-mobile-forecast2.png"
 
 
 export default function WeatherAPI() {
@@ -63,7 +63,7 @@ export default function WeatherAPI() {
             <img
                 alt="Screenshot of Snap CRM Home Screen"
                 className="imageStyles"
-                src={weatherAPIMainImg}
+                src={weatherAPIAppDesktopMain}
             />
             <h2 style={styles.headText}>
                 Enter a location however you want, and get the current weather and 8-day forecast.
@@ -71,7 +71,7 @@ export default function WeatherAPI() {
             <img
                 alt="Screenshot of Snap CRM Add/Edit Modal"
                 className="imageStyles"
-                src={weatherAPIForecast}
+                src={weatherAPIDesktopForecast}
             />
             <h2 style={styles.headText}>
                 Responsively designed to work from mobile to monitor.
@@ -81,24 +81,24 @@ export default function WeatherAPI() {
                     <img
                         alt="Screenshot of Snap CRM Add/Edit Modal"
                         className="imageStyles"
-                        src={weatherApiAppMobileHome}
+                        src={weatherAPIAppMobileMain}
                     />
                     <img
                         alt="Screenshot of Snap CRM Add/Edit Modal"
                         className="imageStyles"
-                        src={weatherApiAppMobileQuery1}
+                        src={weatherAPIAppMobileCurrent}
                     />
                 </div>
                 <div style={styles.mobileImageStyles}>
                     <img
                         alt="Screenshot of Snap CRM Add/Edit Modal"
                         className="imageStyles"
-                        src={weatherApiAppMobileQuery2}
+                        src={weatherAPIAppMobileForecast1}
                     />
                     <img
                         alt="Screenshot of Snap CRM Add/Edit Modal"
                         className="imageStyles"
-                        src={weatherApiAppMobileQuery3}
+                        src={weatherAPIAppMobileForecast2}
                     />
                 </div>
             </div>
