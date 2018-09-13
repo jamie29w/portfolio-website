@@ -1,6 +1,6 @@
 import React from "react";
 import nativeWeatherUrl from "../../../assets/native-weather-today.png";
-import snapCrmUrl from "../../../assets/snap-crm-main.png";
+import snapCrmDesktopModal from "../../../assets/snap-crm-desktop-modal.png";
 import weatherAPIDesktopForecast from "../../../assets/weather-api-app-desktop-forecast.png"
 import { Link } from "react-router-dom";
 
@@ -41,7 +41,7 @@ export default function PortfolioComponent() {
                 <div className="containerStyles">
                     <Link to="/snap-crm">
                         <img
-                            src={snapCrmUrl}
+                            src={snapCrmDesktopModal}
                             className="imageStyles, imageLinkStyles"
                             alt="Screenshot of Snap CRM, built with React, NodeJS, and MongoDB."
                         />
