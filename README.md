@@ -23,4 +23,4 @@ yarn start
 
 Check it out at [jamiew.io](http://jamiew.io).
 
-I spun up this site using [Create React App](https://github.com/facebookincubator/create-react-app) and deployed it with [Surge](https://surge.sh/).
+I spun up this site using [Create React App](https://github.com/facebookincubator/create-react-app) and deployed it on an nginx server on [Digital Ocean](https://www.digitalocean.com/).
