@@ -42,16 +42,9 @@ function Navbar(props) {
           Home
         </Link>
 
-        <span className="links">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            className="links"
-            href={pdf}
-          >
-            Contact & Resume
-          </a>
-        </span>
+        <Link to="/resume" className="links" onClick={props.handleNotHome}>
+          Resume
+        </Link>
 
         <Link onClick={props.handleNotHome} to="/portfolio" className="links">
           Portfolio
@@ -68,6 +61,7 @@ function Navbar(props) {
           </a>
         </span>
       </Menu>
+
       <div style={props.showNav ? styles.hideMenu : styles.flexContainer}>
         <span className="iconLinks">
           <a

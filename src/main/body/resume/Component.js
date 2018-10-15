@@ -1,6 +1,7 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
 import styled from "styled-components";
+import SkillsComponent from "../skills/Component";
 
 export default function ResumeComponent(props) {
   const BodyMdStyles = styled.div`
@@ -22,6 +23,7 @@ export default function ResumeComponent(props) {
       <HeaderMdStyles>
         <ReactMarkdown source={props.resumeHead} />
       </HeaderMdStyles>
+      <SkillsComponent />
       <BodyMdStyles>
         <ReactMarkdown source={props.resumeBody} />
       </BodyMdStyles>
