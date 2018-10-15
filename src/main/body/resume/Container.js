@@ -23,7 +23,6 @@ class ResumeContainer extends Component {
 
   source = "#header\n\nparagraph";
   render() {
-    console.log(typeof this.state.resume);
     return (
       <ResumeComponent
         source={this.source}

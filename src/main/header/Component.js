@@ -14,7 +14,6 @@ function HeaderComponent(props) {
       height: "100%",
       width: "100%",
       background: "rgba(39, 58, 100, 0.25)",
-      display: "inherit",
       alignItems: "flex-end",
       display: "flex",
       flexDirection: "row-reverse"

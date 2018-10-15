@@ -17,7 +17,6 @@ export default function ResumeComponent(props) {
     text-align: center;
   `;
 
-  console.log(props.resume);
   return (
     <div>
       <HeaderMdStyles>
