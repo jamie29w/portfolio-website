@@ -41,21 +41,22 @@ function HomeComponent(props) {
     <div>
       <SkillsComponent />
       <div style={styles.homeView}>
-        <h3 style={styles.headText}>Hello world,</h3>
+        <h3 style={styles.headText}>Who I am:</h3>
 
         <h3 style={styles.bodyText}>
           I{`'`}m a professional turned programmer, looking for a company to
           partner with that wants to improve lives by building great products.
         </h3>
-
         <h3 style={styles.bodyText}>
-          I've moved the dial as a leader in sales, healthcare, and educational
-          technology. Problem solving is my trade, and enhancing processes is my
-          obsession. I use a combination of Lean principles and Agile Scrum
-          tools to lead teams to create profitable change. I believe the best
+          I've worked with and led teams to move the dial in sales, healthcare,
+          and educational technology. Problem solving is my trade, and enhancing
+          processes is my obsession. I use a combination of Lean principles and
+          Agile Scrum tools to lead teams to create profitable changes. The best
+          teams I've had the opportunity to work taught me that the most noble
           use of technology is to enable people to do more of the things that
           matter most.
         </h3>
+        <h3 style={styles.headText}>How I work:</h3>
         <h3 style={styles.bodyText}>
           Profitability happens when happy users feel like rockstars using your
           product. Great user experience is the love child of clear product
@@ -66,16 +67,14 @@ function HomeComponent(props) {
           more good and equipping others to as well. If you feel the same, let
           {`'`}s change the world together.
         </h3>
+        <h3 style={styles.headText}>In a nutshell:</h3>
         <h3 style={styles.bodyText}>
           Empowering Others <span style={styles.punctuation}>|</span>{" "}
-          Value-Added <span style={styles.punctuation}>|</span> UX/UI
+          Value-Added <span style={styles.punctuation}>|</span> UX/UI-Driven
         </h3>
         <h3 style={styles.bodyText}>Cheers!</h3>
         <h3 style={styles.bodyText}>-Jamie W</h3>
       </div>
-      {/* <div>
-        <SkillsComponent />
-      </div> */}
     </div>
   );
 }
