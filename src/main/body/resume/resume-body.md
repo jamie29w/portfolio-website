@@ -29,7 +29,7 @@ Cross-Functional Team Leadership, Lean, Agile Scrum, Process Management, Product
 #### Sales Account Manager at Keep Supply (Feb. 2012 – June 2015)
 
 - S: I was promoted from Temp to Sales Assistant to Technical Account Manager to Sales Account Manager within 2 years. In my final role, I took responsibility for my VP's sales accounts in Washington state and Oregon.
-- B: I worked with technical and operations teams to provide attentive and prompt services and product solutions to prison and jail administrators. I focused pricing efforts on high volume products and sales initiatives on profitable customers.
+- B: I coordinated between prison and jail administrators, internal and external technical teams, and our operations team to deliver commissary and security solutions. This included. I focused on selling and implementing technology efforts that paid for themselves and maintaining aggressive but fair margins for high sales volume product lines.
 - O: Revenue for my territory increased by 10%, and GP increased by 12% for my territories in my first 12 months as a Sales Account Manager. I was granted additional territory in Northern California.
 
 ## Education
