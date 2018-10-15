@@ -1,224 +1,234 @@
 /* Element Styling Below */
 body {
-    font-family: "Lato", sans-serif;
-    font-weight: 100;
-    background-color: #f6f4f5;
-    -webkit-font-smoothing: subpixel-antialiased;
-    -webkit-text-stroke: 1px transparent;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  background-color: #f6f4f5;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-text-stroke: 1px transparent;
 }
 
 /* Class Styling Below */
 .blueLinks {
-    color: rgba(39, 58, 100, 0.7);
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    text-decoration: none;
-    padding: 5px 0px;
+  color: rgba(39, 58, 100, 0.7);
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 5px 0px;
 }
 
 .bluelinks:focus,
 .bluelinks:hover {
-    color: rgba(39, 58, 100, 1);
-    text-decoration: none;
+  color: rgba(39, 58, 100, 1);
+  text-decoration: none;
 }
 
 .containerStyles {
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    flex: 0 1 auto;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  flex: 0 1 auto;
 }
 
 .iconLinks {
-    color: rgba(246, 244, 245, 0.65);
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    text-decoration: none;
-    font-size: 25px;
-    padding: 5px 0px;
+  color: rgba(246, 244, 245, 0.65);
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 5px 0px;
 }
 
 .links {
-    color: rgba(246, 244, 245, 0.65);
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    text-decoration: none;
-    padding: 5px 0px;
+  color: rgba(246, 244, 245, 0.65);
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 5px 0px;
 }
 
 .iconLinks:focus,
 .iconLinks:hover,
 .links:focus,
 .links:hover {
-    color: rgba(246, 244, 245, 1);
-    text-decoration: none;
+  color: rgba(246, 244, 245, 1);
+  text-decoration: none;
 }
 
 .imageLinkStyles {
-    max-height: 450px;
-    width: auto;
-    border-radius: 2px;
+  max-height: 450px;
+  width: auto;
+  border-radius: 2px;
 }
 
 .imageLinkStyles:hover {
-    opacity: 0.75;
+  opacity: 0.75;
 }
 
 .imageStyles {
-    max-height: 450px;
-    width: auto;
-    border-radius: 2px;
-    margin: 15px;
+  max-height: 450px;
+  width: auto;
+  border-radius: 2px;
+  margin: 15px;
 }
 
 .nativeWeatherRowStyles {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 /*Responsive (and related) styling below*/
 
 .bm-burger-button {
-    display: none;
+  display: none;
 }
 
 .a {
-    flex-wrap: wrap;
-    order: 1;
-    font-size: 35px;
-    margin-top: 8px;
-    margin-bottom: 8px;
+  flex-wrap: wrap;
+  order: 1;
+  font-size: 35px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .b {
-    flex-wrap: wrap;
-    order: 2;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    text-align: center;
+  flex-wrap: wrap;
+  order: 2;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  text-align: center;
 }
 
 .c {
-    flex-wrap: wrap;
-    order: 3;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    text-align: center;
+  flex-wrap: wrap;
+  order: 3;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  text-align: center;
 }
 
 .d {
-    flex-wrap: wrap;
-    order: 4;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    text-align: center;
+  flex-wrap: wrap;
+  order: 4;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  text-align: center;
 }
 
 .e {
-    flex-wrap: wrap;
-    order: 5;
-    font-size: 35px;
-    margin-top: 8px;
-    margin-bottom: 8px;
+  flex-wrap: wrap;
+  order: 5;
+  font-size: 35px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 @media screen and (max-width: 768px) {
-    .a {
-        order: 1;
-        flex: 0 0 50%;
-    }
+  .a {
+    order: 1;
+    flex: 0 0 50%;
+  }
 
-    .b {
-        order: 3;
-        flex: 0 0 33%;
-    }
+  .b {
+    order: 3;
+    flex: 0 0 33%;
+  }
 
-    .c {
-        order: 4;
-        flex: 0 0 33%;
-    }
+  .c {
+    order: 4;
+    flex: 0 0 33%;
+  }
 
-    .d {
-        order: 5;
-        flex: 0 0 33%;
-    }
+  .d {
+    order: 5;
+    flex: 0 0 33%;
+  }
 
-    .e {
-        order: 2;
-        flex: 0 0 50%;
-    }
+  .e {
+    order: 2;
+    flex: 0 0 50%;
+  }
 
-    .imageStyles,
-    .imageLinkStyles {
-        max-width: 480px;
-        height: auto;
-    }
+  .imageStyles,
+  .imageLinkStyles {
+    max-width: 480px;
+    height: auto;
+  }
 
-    .bm-burger-button {
-        display: none;
-    }
+  .bm-burger-button {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .imageStyles,
-    .imageLinkStyles {
-        max-width: 375px;
-        height: auto;
-    }
+  .imageStyles,
+  .imageLinkStyles {
+    max-width: 375px;
+    height: auto;
+  }
 
-    .bm-burger-button {
-        display: inherit;
-        position: absolute;
-        width: 36px;
-        height: 30px;
-        left: 36px;
-        top: 36px;
-    }
+  .bm-burger-button {
+    display: inherit;
+    position: absolute;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 36px;
+  }
 
-    .nativeWeatherRowStyles {
-        flex-wrap: wrap;
-    }
+  .nativeWeatherRowStyles {
+    flex-wrap: wrap;
+  }
+
+  .c {
+    order: 5;
+    flex: 0 0 33%;
+  }
+
+  .d {
+    order: 4;
+    flex: 0 0 33%;
+  }
 }
 
 /*Non-responsive Burger Menu Styling Below*/
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-    background: rgba(55, 58, 71, 0.8);
+  background: rgba(55, 58, 71, 0.8);
 }
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-    height: 24px;
-    width: 24px;
+  height: 24px;
+  width: 24px;
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
-    background: #bdc3c7;
+  background: #bdc3c7;
 }
 
 /* General sidebar styles */
 .bm-menu {
-    background: #373a47;
-    padding: 2.5em 1.5em 0;
-    font-size: 1.5em;
-    color: rgba(246, 244, 245, 1);
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.5em;
+  color: rgba(246, 244, 245, 1);
 }
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
-    fill: #373a47;
+  fill: #373a47;
 }
 
 /* Wrapper for item list */
 .bm-item-list {
-    color: rgba(246, 244, 245, 1);
-    padding: 0.5em;
+  color: rgba(246, 244, 245, 1);
+  padding: 0.5em;
 }
 
 /* Styling of overlay */
 .bm-overlay {
-    background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.3);
 }
