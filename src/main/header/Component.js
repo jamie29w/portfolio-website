@@ -26,15 +26,12 @@ function HeaderComponent(props) {
       fontStyle: "italic"
     },
     tall: {
-      // alignItems: "flex-end",
       background: `url(${backgroundUrl}) no-repeat center center`,
       backgroundSize: "cover",
       WebkitBackgroundSize: "cover",
       MozBackgroundSize: "cover",
       OBackgroundSize: "cover",
       color: "#DCDCDC",
-      // display: "flex",
-      // flexDirection: "row-reverse",
       fontFamily: "'Lato', sans-serif",
       height: "75vh",
       minWidth: "375px",

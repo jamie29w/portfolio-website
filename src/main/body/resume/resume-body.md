@@ -6,11 +6,11 @@ JavaScript ES8, ReactJS, React Native, Redux, HTML5, CSS3, Responsive Design, Ex
 
 Cross-Functional Team Leadership, Lean, Agile Scrum, Process Management, Product Management, Problem Solving, & Sales.
 
-## Recent Experience
+## Recent Experience (Situation, Behavior, & Outcome)
 
 #### Director of Curriculum at V School (June 2018 – Oct. 2018)
 
-- S: V School had developed an industry-vetted Full Stack JavaScript course but needed help making instruction processes and student outcomes more consistent. We also needed a model to start from when creating new courses including Experience Design (UX/UI)and Data Science.
+- S: V School had developed an industry-vetted Full Stack JavaScript course but needed help making instruction processes and student outcomes more consistent. We also needed a model to start from when creating new courses including Experience Design (UX/UI) and Data Science.
 - B: I worked with the education team to refine our educational philosophies and define our strategies in measurable processes that could be replicated in courses teaching other content formats. I also partnered with the Head of Education to manage the implementation of a custom-tailored learning management system.
 - O: V School is launching two new courses in Oct. 2018 and Nov. 2018: Experience Design and Data Science. The Full Stack JavaScript educational team is building a custom-tailored learning management system that will used across the entire organization.
 
@@ -23,7 +23,7 @@ Cross-Functional Team Leadership, Lean, Agile Scrum, Process Management, Product
 #### Account Manager at Renown Health (June 2015 – Sept. 2018)
 
 - S: Renown's Occupational Health Network serves 1,400+ employers' drug testing, workers' compensation, and occupational health needs across 11 urgent care and 3 ER locations. Account retention had recently been split out from sales into account management.
-- B: I was the primary liaison to employers, insurers, and third party administrators on behalf of Renown, representing medical providers, clinic staff, and urgent care & ER leadership. I trained staff and leaders for all locations and implemented lean standard work to support process and their improvement.
+- B: I was the primary liaison to employers, insurers, and third-party administrators on behalf of Renown, representing medical providers, clinic staff, and urgent care & ER leadership. I trained staff and leaders for all locations and implemented lean standard work to support process and their improvement.
 - O: Operational coding and billing errors were reduced across all sites from 8% to 2%. The program grew to 1,700 employers primarily based on marketing and word-of-mouth.
 
 #### Sales Account Manager at Keep Supply (Feb. 2012 – June 2015)
@@ -36,7 +36,7 @@ Cross-Functional Team Leadership, Lean, Agile Scrum, Process Management, Product
 
 Western Governor’s University (Sept. 2016 - Sept. 2018)
 MBA, IT Management
-Our team ranked in the 94 percentile for Capsim's Capstone simulation
+Our team ranked in the 94th percentile for Capsim's Capstone simulation
 
 V School (Sept. 2017 - Nov. 2017)
 Full Stack JavaScript Coding Bootcamp
