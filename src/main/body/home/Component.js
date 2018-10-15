@@ -28,7 +28,7 @@ function HomeComponent(props) {
       borderRadius: "10px",
       color: "#DCDCDC",
       marginTop: "20px",
-      marginBottom: "25px",
+      marginBottom: "20px",
       padding: "20px"
     },
     punctuation: {
@@ -39,6 +39,7 @@ function HomeComponent(props) {
 
   return (
     <div>
+      <SkillsComponent />
       <div style={styles.homeView}>
         <h3 style={styles.headText}>Hello world,</h3>
 
@@ -72,9 +73,9 @@ function HomeComponent(props) {
         <h3 style={styles.bodyText}>Cheers!</h3>
         <h3 style={styles.bodyText}>-Jamie W</h3>
       </div>
-      <div>
+      {/* <div>
         <SkillsComponent />
-      </div>
+      </div> */}
     </div>
   );
 }
