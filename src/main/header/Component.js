@@ -16,6 +16,14 @@ function HeaderComponent(props) {
     position: relative;
     width: 100%;
     z-index: 50;
+
+    @media (min-width: 700px) {
+      background: url(${backgroundUrl}) no-repeat center center fixed;
+      background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+    }
   `;
 
   const Overlay = styled.div`
