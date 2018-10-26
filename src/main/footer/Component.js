@@ -32,9 +32,9 @@ function FooterComponent(props) {
 
       <a
         className="b links"
-        href="mailto:jamieWDev@gmail.com?Subject=Let's%20Build%20Something%20Together..."
+        href="mailto:jamieWdev@gmail.com?Subject=Let's%20Build%20Something%20Together..."
       >
-        jamieWDev@gmail.com
+        jamieWdev@gmail.com
       </a>
 
       <a className="c links" href={resumeZip}>

@@ -1,67 +1,61 @@
 import React from "react";
+import styled from "styled-components";
 import backgroundUrl from "../../assets/marina-sparks.jpg";
 
 function HeaderComponent(props) {
-  const styles = {
-    headText: {
-      fontSize: "3.5em",
-      fontWeight: "300",
-      marginBottom: "10px",
-      fontStyle: "italic"
-    },
-    overlay: {
-      zIndex: 1,
-      height: "100%",
-      width: "100%",
-      background: "rgba(39, 58, 100, 0.25)",
-      alignItems: "flex-end",
-      display: "flex",
-      flexDirection: "row-reverse"
-    },
-    subHeadText: {
-      fontSize: "2.5em",
-      fontWeight: "300",
-      marginTop: "10px",
-      fontStyle: "italic"
-    },
-    tall: {
-      background: `url(${backgroundUrl}) no-repeat center center`,
-      backgroundSize: "cover",
-      WebkitBackgroundSize: "cover",
-      MozBackgroundSize: "cover",
-      OBackgroundSize: "cover",
-      color: "#DCDCDC",
-      fontFamily: "'Lato', sans-serif",
-      height: "75vh",
-      minWidth: "375px",
-      postion: "relative",
-      transition: "ease-in-out .75s",
-      width: "100%",
-      zIndex: "50"
-    },
-    textContainer: {
-      margin: "5% 10%",
-      textAlign: "right"
-    }
-  };
+  const OuterHeader = styled.div`
+    height: 70vh;
+    background: url(${backgroundUrl}) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #dcdcdc;
+    font-family: "Lato", sans-serif;
+    min-width: 375px;
+    position: relative;
+    width: 100%;
+    z-index: 50;
+  `;
 
-  //spread styles.tall and update height only
-  const responsiveStyles = {
-    short: {
-      ...styles.tall,
-      height: "40vh"
-    }
-  };
+  const Overlay = styled.div`
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background: rgba(39, 58, 100, 0.25);
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row-reverse;
+  `;
+
+  const HeadText = styled.h1`
+    font-size: 3.5em;
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-style: italic;
+  `;
+
+  const SubHeadText = styled.h2`
+    font-size: 2.5em;
+    font-weight: 300;
+    margin-top: 10px;
+    font-style: italic;
+  `;
+
+  const TextContainer = styled.div`
+    margin: 5% 10%;
+    text-align: right;
+  `;
 
   return (
-    <div style={props.isHome ? styles.tall : responsiveStyles.short}>
-      <div style={styles.overlay}>
-        <div style={styles.textContainer}>
-          <h1 style={styles.headText}>Jamie Woodmancy, MBA</h1>
-          <h2 style={styles.subHeadText}>Full Stack React Web Developer</h2>
-        </div>
-      </div>
-    </div>
+    <OuterHeader>
+      <Overlay>
+        <TextContainer>
+          <HeadText>Jamie Woodmancy, MBA</HeadText>
+          <SubHeadText>Full Stack React Web Developer</SubHeadText>
+        </TextContainer>
+      </Overlay>
+    </OuterHeader>
   );
 }
 
