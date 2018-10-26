@@ -14,15 +14,15 @@ function HamburgerMenu(props) {
         <i className="fa fa-github fa-lg" aria-hidden="true" />
       </a>
 
-      <Link onClick={props.handleHome} to="/" className="links">
+      <Link to="/" className="links">
         Home
       </Link>
 
-      <Link to="/resume" className="links" onClick={props.handleNotHome}>
+      <Link to="/resume" className="links">
         Resume
       </Link>
 
-      <Link onClick={props.handleNotHome} to="/portfolio" className="links">
+      <Link to="/portfolio" className="links">
         Portfolio
       </Link>
 

@@ -32,15 +32,15 @@ function WideNavView(props) {
         </a>
       </span>
 
-      <Link to="/" className="links" onClick={props.handleHome}>
+      <Link to="/" className="links">
         Home
       </Link>
 
-      <Link to="/resume" className="links" onClick={props.handleNotHome}>
+      <Link to="/resume" className="links">
         Resume
       </Link>
 
-      <Link to="/portfolio" className="links" onClick={props.handleNotHome}>
+      <Link to="/portfolio" className="links">
         Portfolio
       </Link>
 
