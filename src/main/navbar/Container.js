@@ -25,12 +25,7 @@ class NavbarContainer extends React.Component {
 
   render() {
     const NavView = this.state.showHamNav ? HamburgerMenu : WideNavView;
-    return (
-      <NavView
-        handleHome={this.props.handleHome}
-        handleNotHome={this.props.handleNotHome}
-      />
-    );
+    return <NavView />;
   }
 }
 
