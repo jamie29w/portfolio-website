@@ -5,7 +5,7 @@ import backgroundUrl from "../../assets/marina-sparks.jpg";
 function HeaderComponent(props) {
   const OuterHeader = styled.div`
     height: 70vh;
-    background: url(${backgroundUrl}) no-repeat center center fixed;
+    background: url(${backgroundUrl}) no-repeat center center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -16,10 +16,6 @@ function HeaderComponent(props) {
     position: relative;
     width: 100%;
     z-index: 50;
-
-    @media (max-width: 400px) {
-      background: url(${backgroundUrl}) no-repeat center center;
-    }
   `;
 
   const Overlay = styled.div`
