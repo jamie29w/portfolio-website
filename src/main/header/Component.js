@@ -6,10 +6,10 @@ function HeaderComponent(props) {
   const OuterHeader = styled.div`
     height: 70vh;
     background: url(${backgroundUrl}) no-repeat center center fixed;
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
     color: #dcdcdc;
     font-family: "Lato", sans-serif;
     min-width: 375px;
