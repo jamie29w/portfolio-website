@@ -16,19 +16,9 @@ function HeaderComponent(props) {
     position: relative;
     width: 100%;
     z-index: 50;
-    ::after {
-      height: 70vh;
+
+    @media (max-width: 400px) {
       background: url(${backgroundUrl}) no-repeat center center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      color: #dcdcdc;
-      font-family: "Lato", sans-serif;
-      min-width: 375px;
-      position: relative;
-      width: 100%;
-      z-index: 50;
     }
   `;
 
