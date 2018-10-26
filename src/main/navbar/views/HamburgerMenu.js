@@ -4,7 +4,7 @@ import { stack as Menu } from "react-burger-menu";
 
 function HamburgerMenu(props) {
   return (
-    <Menu isOpen={false} width={175}>
+    <Menu right isOpen={false} width={175}>
       <a
         target="_blank"
         rel="noopener noreferrer"
