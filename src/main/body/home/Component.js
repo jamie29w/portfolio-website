@@ -52,9 +52,9 @@ function HomeComponent(props) {
           and educational technology. Problem solving is my trade, and enhancing
           processes is my obsession. I use a combination of Lean principles and
           Agile Scrum tools to lead teams to create profitable changes. The best
-          teams I've had the opportunity to work taught me that the most noble
-          use of technology is to enable people to do more of the things that
-          matter most.
+          teams I've had the opportunity to work with taught me that the most
+          noble use of technology is to enable people to do more of the things
+          that matter most.
         </h3>
         <h3 style={styles.headText}>How I work:</h3>
         <h3 style={styles.bodyText}>
