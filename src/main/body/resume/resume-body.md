@@ -20,7 +20,7 @@ Cross-Functional Team Leadership, Lean, Agile Scrum, Process Management, Product
 - B: I joined the team to focus primarily on helping these incoming students. I created interactive lesson content covering incoming student's most common questions so that we could spend more mentoring time on deeper subjects.
 - O: Students began arriving to day 1 of the bootcamp with a deeper knowledge of JavaScript and DOM principles than before. As a result, the course instructors were able to spend more time teaching additional skills and subjects.
 
-#### Account Manager at Renown Health (June 2015 – Sept. 2018)
+#### Account Manager at Renown Health (June 2015 – Sept. 2017)
 
 - S: Renown's Occupational Health Network serves 1,400+ employers' drug testing, workers' compensation, and occupational health needs across 11 urgent care and 3 ER locations. Account retention had recently been split out from sales into account management.
 - B: I was the primary liaison to employers, insurers, and third-party administrators on behalf of Renown, representing medical providers, clinic staff, and urgent care & ER leadership. I trained staff and leaders for all locations and implemented lean standard work to support process and their improvement.
